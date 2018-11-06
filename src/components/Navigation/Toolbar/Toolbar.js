@@ -5,14 +5,16 @@ import NavigationItems from '../NavigationItems/NavigationItems';
 import classes from './Toolbar.module.css';
 
 const toolbar = ({siteTitle}) => (
-  <header className={classes.Toolbar}>
-    <div>
-      {siteTitle}
+  <div className={classes.NavContainer}>
+    <div className={classes.Toolbar}>
+      <span>
+        {siteTitle}
+      </span>
+      {/* <nav className={classes.Navigation}> */}
+        <NavigationItems />
+      {/* </nav> */}
     </div>
-    <nav>
-      <NavigationItems />
-    </nav>
-  </header>
+  </div>
 );
 
 export default toolbar;
