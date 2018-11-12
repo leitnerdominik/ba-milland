@@ -1,7 +1,8 @@
 import React from 'react';
 import { StaticQuery, graphql } from 'gatsby';
+import moment from 'moment';
 
-import Event from './EventPreview/EventPreview';
+import Event from './Event/Event';
 
 const events = () => (
   <StaticQuery
@@ -13,7 +14,7 @@ const events = () => (
             id
             frontmatter {
               title
-              date(formatString: "DD MMMM, YYYY", locale: "de")
+              date(formatString: "DD.MM.YYYY", locale: "de")
             }
             fields {
               slug
@@ -25,9 +26,14 @@ const events = () => (
     }
   `}
     render={data => {
+      const postsOlderThanToday = data.allMarkdownRemark.edges.filter(({node}) => {
+        const today = moment().startOf('day');
+        const postDate = (moment(node.frontmatter.date, "DD.MM.YYYY"));
+        return today.isSameOrBefore(postDate);
+      });
       return (
       <>
-        {data.allMarkdownRemark.edges.map(({ node }) => (
+        {postsOlderThanToday.map(({ node }) => (
           <Event 
             key={node.id}
             title={node.frontmatter.title}
