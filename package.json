@@ -1,8 +1,8 @@
 {
-  "name": "gatsby-starter-default",
-  "description": "Gatsby default starter",
+  "name": "ba_milland",
+  "description": "website about Bildungsausschuss Milland",
   "version": "1.0.0",
-  "author": "Kyle Mathews <mathews.kyle@gmail.com>",
+  "author": "Dominik Leitner <leitner.dominik@hotmail.de>",
   "dependencies": {
     "gatsby": "^2.0.38",
     "gatsby-image": "^2.0.15",
@@ -14,6 +14,7 @@
     "gatsby-source-filesystem": "^2.0.4",
     "gatsby-transformer-remark": "^2.1.11",
     "gatsby-transformer-sharp": "^2.1.4",
+    "moment": "^2.22.2",
     "react": "^16.5.1",
     "react-dom": "^16.5.1",
     "react-helmet": "^5.2.0",
