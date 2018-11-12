@@ -6,13 +6,12 @@ import EventsPreview from '../components/events/EventsPreview';
 
 import classes from './index.module.css'
 
-const IndexPage = ({ data }) => {
-  
-  const {placeholderImage: { childImageSharp: { fluid }}} = data; 
+const IndexPage = () => {
+   
   return (
     <Layout>
       <div className={classes.ImageContainer}>
-        <HeaderImage fluid={fluid}/>
+        <HeaderImage />
       </div>
       <EventsPreview />
     </Layout>
@@ -20,15 +19,3 @@ const IndexPage = ({ data }) => {
 }
 
 export default IndexPage;
-
-export const query = graphql`
-    query {
-      placeholderImage: file(relativePath: { eq: "vereine_header_image_2.jpg" }) {
-        childImageSharp {
-          fluid(maxWidth: 2048) {
-            ...GatsbyImageSharpFluid_noBase64
-          }
-        }
-      }
-    }
-`;
