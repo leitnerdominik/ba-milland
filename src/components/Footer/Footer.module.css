@@ -1,0 +1,15 @@
+.FooterContainer {
+  position: absolute;
+  width: 100%;
+  background-color: #02b839;
+  bottom: 0;
+  left: 0;
+  text-align: center;
+}
+
+.FooterContainer a {
+  text-decoration: none;
+  color: black;
+  display: inline-block;
+  margin: 16px;
+}
