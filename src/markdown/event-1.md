@@ -1,6 +1,6 @@
 ---
 title: "Veranstaltung eins"
-date: "2018-08-13"
+date: "2018-08-14"
 place: "Jakob Steiner Haus"
 time: "19:00 - 20:00"
 ---
