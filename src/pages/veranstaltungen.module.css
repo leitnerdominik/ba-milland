@@ -1,0 +1,10 @@
+.DateContainer {
+  width: 80%;
+  margin: 20px auto;
+  margin-top: 90px;
+  text-align: right;
+}
+
+.DateContainer > span {
+  font-size: 32px;
+}

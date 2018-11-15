@@ -1,10 +1,13 @@
 .EventContainer {
-  margin: 20px;
   position: relative;
+  width: 80%;
+  margin: 40px auto;
+  text-align: justify;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.4);
 }
 
-.EventContainer h1,
-.EventContainer h3 {
+.EventContainer h3,
+.EventContainer h5 {
   display: inline-block;
 }
 
@@ -12,7 +15,13 @@
   text-decoration: none;
 }
 
+.EventLink h3 {
+  color: #02b839;
+}
+
 .EventDate {
-  margin-left: 30px;
+  position: absolute;
   color: #999;
+  top: 0;
+  right: 0;
 }

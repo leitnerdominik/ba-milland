@@ -1,0 +1,17 @@
+.FilterContainer {
+  display: inline-block;
+  text-align: left;
+  margin-left: 16px;
+}
+
+.Datepicker {
+  padding: 8px;
+  margin: 5px 0;
+  border: 1px solid black;
+  border-radius: 4px;
+  font-size: 18px;
+}
+
+.Datepicker:focus {
+  outline: none;
+}
