@@ -4,15 +4,13 @@ import Layout from '../components/Layout/Layout';
 import HeaderImage from '../components/HeaderImage/HeaderImage';
 import EventsPreview from '../components/events/EventsPreview';
 
-import classes from './index.module.css'
+import classes from './index.module.css';
 
 const IndexPage = () => {
    
   return (
     <Layout>
-      <div className={classes.ImageContainer}>
-        <HeaderImage />
-      </div>
+      <HeaderImage />
       <EventsPreview />
     </Layout>
   );
