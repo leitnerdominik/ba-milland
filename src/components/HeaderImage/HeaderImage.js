@@ -2,16 +2,18 @@ import React from 'react';
 import Img from 'gatsby-image';
 import { StaticQuery, graphql } from 'gatsby';
 
+import classes from './HeaderImage.module.css';
+
 export default () => (
   <StaticQuery
     query={graphql`
       query {
         placeholderImage: file(
-          relativePath: { eq: "vereine_header_image_2.jpg" }
+          relativePath: { eq: "education-min.jpg" }
         ) {
           childImageSharp {
-            fluid(maxWidth: 3000) {
-              ...GatsbyImageSharpFluid_noBase64
+            fluid(maxWidth: 1000,  maxHeight: 400) {
+              ...GatsbyImageSharpFluid_noBase64 
             }
           }
         }
@@ -19,7 +21,7 @@ export default () => (
     `}
     render={data => (
       <>
-        <div>
+        <div className={classes.ImageContainer}>
           <Img fluid={data.placeholderImage.childImageSharp.fluid} />
         </div>
       </>

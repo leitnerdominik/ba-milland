@@ -6,7 +6,7 @@ import { StaticQuery, graphql } from 'gatsby';
 import Toolbar from '../Navigation/Toolbar/Toolbar';
 import Footer from '../Footer/Footer';
 
-import classes from './Layout.module.css';
+import './Layout.css';
 
 const Layout = ({ children }) => (
   <StaticQuery
@@ -30,11 +30,13 @@ const Layout = ({ children }) => (
         >
           <html lang="en" />
         </Helmet>
-        <Toolbar siteTitle={data.site.siteMetadata.title} />
-        <div className={classes.BodyContent}>
-          {children}
+        <div className="outer-container">
+          <Toolbar siteTitle={data.site.siteMetadata.title} />
+          <div className="bodyContent">
+            {children}
+          </div>
+          <Footer />
         </div>
-        <Footer />
       </>
     )}
   />

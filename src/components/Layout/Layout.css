@@ -1,0 +1,23 @@
+.bodyContent {
+  margin-top: 71px;
+  padding-bottom: 65px;
+}
+
+.outer-container {
+  position: relative;
+  min-height: 100%
+}
+
+html, body  {
+  height: 100%;
+  padding: 0;
+  margin: 0;
+}
+
+#___gatsby {
+  height: 100%;
+}
+
+#___gatsby > div {
+  height: 100%;
+}
