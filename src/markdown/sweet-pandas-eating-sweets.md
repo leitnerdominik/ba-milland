@@ -1,6 +1,7 @@
 ---
 title: "Sweet Pandas Eating Sweets"
 date: "2017-02-10"
+section: event
 ---
 
 Pandas are really sweet.

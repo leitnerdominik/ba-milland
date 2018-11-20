@@ -2,6 +2,7 @@
 title: "Veranstaltung zwei"
 date: "2018-11-14"
 place: "Tschuggmall"
+section: event
 time: "19:00 - 20:00"
 ---
 
