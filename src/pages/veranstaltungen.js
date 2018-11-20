@@ -94,21 +94,21 @@ class Veranstaltungen extends Component {
 export default Veranstaltungen;
 
 export const query = graphql`
-  query {
-    allMarkdownRemark(sort: { fields: [frontmatter___date], order: DESC }) {
-      edges {
-        node {
-          id
-          frontmatter {
-            title
-            date(formatString: "DD.MM.YYYY", locale: "de")
-          }
-          fields {
-            slug
-          }
-          excerpt
+query {
+  allMarkdownRemark(sort: {fields: [frontmatter___date], order: DESC}, filter: {frontmatter: {section: {eq: "event"}}}) {
+    edges {
+      node {
+        id
+        frontmatter {
+          title
+          date(formatString: "DD.MM.YYYY", locale: "de")
         }
+        fields {
+          slug
+        }
+        excerpt
       }
     }
   }
+}
 `;
