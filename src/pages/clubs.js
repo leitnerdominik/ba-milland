@@ -12,33 +12,41 @@ class Clubs extends Component {
     super(props);
 
     this.state = {
-      images: null,
+      markdownArr: null,
     }
   }
 
   componentWillMount() {
     console.log(this.props.data);
-    const images = this.props.data.allFile.edges.map(({node}, index) => {
-      console.log(index);
-      return node.childImageSharp.fluid
+    const markdowns = this.props.data.allMarkdownRemark.edges.map(({node}, index) => {
+      return {
+        id: node.id,
+        image: node.frontmatter.cover_image.childImageSharp.fluid,
+        title: node.frontmatter.title,
+        link: node.frontmatter.link,
+        content: node.html,
+      }
     });
 
-    this.setState({images});
+    console.log(markdowns);
+    this.setState({markdownArr: markdowns});
   }
 
   render() {
-
-    console.log(this.state.images)
-
+    const { markdownArr } = this.state;
+    const clubs = markdownArr.map(markdown => (
+      <ClubPreview
+        key={markdown.id}
+        img={markdown.image}
+        title={markdown.title}
+        htmlContent={markdown.content}
+        link={markdown.link}
+      />
+    ));
     return (
       <Layout>
         <div className={classes.ClubsContainer}>
-          <ClubPreview 
-            imgPath={this.state.images[0]}
-            title="Musikkapelle Milland"
-            link="/musikkapelle-milland">
-              Ziele: Durch Pflege guter Blasmusik zur Förderung des kulturellen Lebens in Milland beizutragen und dadurch besonders musikbegeisterte Jugendliche anzusprechen.
-          </ClubPreview>
+          {clubs}
         </div>
       </Layout>
     );
@@ -50,16 +58,42 @@ export default Clubs;
 
 export const query = graphql`
   query {
-    allFile(filter:{extension:{regex:"/(jpeg|jpg|gif|png)/"},  relativePath: {regex: "/clubs/"}}) {
+    allMarkdownRemark (filter: {frontmatter: {section: {eq: "clubs"}}}){
       edges {
         node {
-          childImageSharp {
-            fluid(maxWidth: 345,  maxHeight: 140) {
-              ...GatsbyImageSharpFluid_noBase64 
+          id
+          frontmatter {
+            title
+            section
+            link
+            cover_image {
+              publicURL
+              childImageSharp {
+                fluid(maxWidth: 350) {
+                  ...GatsbyImageSharpFluid_noBase64
+                }
+              }
             }
           }
+          html
         }
       }
     }
   }
 `;
+
+// export const query = graphql`
+//   query {
+//     allFile(filter:{extension:{regex:"/(jpeg|jpg|gif|png)/"},  relativePath: {regex: "/clubs/"}}) {
+//       edges {
+//         node {
+//           childImageSharp {
+//             fluid(maxWidth: 345,  maxHeight: 140) {
+//               ...GatsbyImageSharpFluid_noBase64 
+//             }
+//           }
+//         }
+//       }
+//     }
+//   }
+// `;
