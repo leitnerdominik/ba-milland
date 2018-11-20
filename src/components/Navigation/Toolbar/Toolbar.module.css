@@ -7,14 +7,6 @@
   align-items: center;
 }
 
-/* .Navigation {
-  height: 100%;
-  display: inline-block;
-  position: absolute;
-  right: 0;
-  top: 0;
-} */
-
 .NavContainer {
   width: 100%;
   margin: 0 auto;

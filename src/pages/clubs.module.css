@@ -1,0 +1,10 @@
+.ClubsContainer {
+  margin: 20px;
+  margin-top: 90px;
+  /* display: grid;
+  grid-template-columns: repeat(3, 1fr); */
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}

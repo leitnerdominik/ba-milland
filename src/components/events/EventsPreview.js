@@ -31,16 +31,21 @@ const events = () => (
         const postDate = (moment(node.frontmatter.date, "DD.MM.YYYY"));
         return today.isSameOrBefore(postDate);
       });
+
+      const events = postsOlderThanToday.map(({ node }) => (
+        <Event 
+          key={node.id}
+          title={node.frontmatter.title}
+          date={node.frontmatter.date}
+          content={node.excerpt}
+          path={node.fields.slug}/>
+      ));
+
+      const content = events.length > 0 ? events : <p>Keine Einträge gefunden!</p>
       return (
       <>
-        {postsOlderThanToday.map(({ node }) => (
-          <Event 
-            key={node.id}
-            title={node.frontmatter.title}
-            date={node.frontmatter.date}
-            content={node.excerpt}
-            path={node.fields.slug}/>
-        ))}
+        <h2>Bevorstehende Veranstaltungen</h2>
+        {content}
       </>
       )}} 
   />

@@ -1,6 +1,6 @@
 ---
 title: "Veranstaltung eins"
-date: "2018-08-14"
+date: "2018-11-20"
 place: "Jakob Steiner Haus"
 section: event
 time: "19:00 - 20:00"
