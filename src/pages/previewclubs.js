@@ -3,7 +3,7 @@ import React, { Component } from 'react';
 import Layout from '../components/Layout/Layout';
 import ClubPreview from '../components/ClubPreview/ClubPreview';
 
-import classes from './clubs.module.css';
+import classes from './previewclubs.module.css';
 import { graphql } from 'gatsby';
 
 class Clubs extends Component {
@@ -58,7 +58,7 @@ export default Clubs;
 
 export const query = graphql`
   query {
-    allMarkdownRemark (filter: {frontmatter: {section: {eq: "clubs"}}}){
+    allMarkdownRemark (filter: {frontmatter: {section: {eq: "previewclub"}}}){
       edges {
         node {
           id
