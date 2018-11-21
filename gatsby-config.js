@@ -40,18 +40,19 @@ module.exports = {
         ],
       },
     },
-    {
-      resolve: `gatsby-plugin-manifest`,
-      options: {
-        name: 'bildungsausschuss-milland',
-        short_name: 'ba_milland',
-        start_url: '/',
-        background_color: '#ffffff',
-        theme_color: '#02b839',
-        display: 'minimal-ui',
-        icon: 'src/images/bildungsausschuss-logo.png', // This path is relative to the root of the site.
-      },
-    },
+    `gatsby-plugin-netlify-cms`,
+    // {
+    //   resolve: `gatsby-plugin-manifest`,
+    //   options: {
+    //     name: 'bildungsausschuss-milland',
+    //     short_name: 'ba_milland',
+    //     start_url: '/',
+    //     background_color: '#ffffff',
+    //     theme_color: '#02b839',
+    //     display: 'minimal-ui',
+    //     icon: 'src/images/bildungsausschuss-logo.png', // This path is relative to the root of the site.
+    //   },
+    // },
     'gatsby-plugin-offline',
   ],
 };

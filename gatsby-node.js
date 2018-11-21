@@ -21,6 +21,9 @@ exports.createPages = ({ graphql, actions}) => {
       allMarkdownRemark {
         edges {
           node {
+            frontmatter {
+              section
+            }
             fields {
               slug
             }
@@ -31,9 +34,18 @@ exports.createPages = ({ graphql, actions}) => {
     `)
     .then(result => {
       result.data.allMarkdownRemark.edges.forEach(({ node}) => {
+        let componentPath = null;
+        if(node.frontmatter.section === 'event') {
+          componentPath = path.resolve('./src/templates/eventPost.js');
+        } else if(node.frontmatter.section === 'club') {
+          componentPath = path.resolve('./src/templates/clubPost.js');
+        } else {
+          return;
+        }
+
         createPage({
           path: node.fields.slug,
-          component: path.resolve('./src/templates/eventPost.js'),
+          component: componentPath,
           context: {
             slug: node.fields.slug,
           }
