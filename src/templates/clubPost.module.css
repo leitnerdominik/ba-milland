@@ -1,0 +1,30 @@
+.ClubPostContainer {
+  width: 80%;
+  margin: 90px auto 0 auto;
+}
+
+.BannerImage {
+  width: 400px;
+  float: left;
+  margin-right: 1.45rem;
+}
+
+.OuterAvatarContainer {
+  display: inline-block;
+}
+
+.AvatarContainer {
+  display: flex;
+}
+
+.AvatarImage {
+  margin: 20px;
+  width: 250px;
+}
+
+.AvatarDetails {
+  border-left: 1px solid black;
+  padding: 16px;
+  height: 80%;
+  margin: auto 0;
+}

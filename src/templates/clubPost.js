@@ -4,19 +4,30 @@ import Img from 'gatsby-image';
 
 import Layout from '../components/Layout/Layout';
 
+import classes from './clubPost.module.css';
+
 export default ({ data }) => {
+  console.log(data);
   const post = data.markdownRemark;
   return (
     <Layout>
-      <div>
-        <h1>{post.frontmatter.title}</h1>
-        <p>{post.frontmatter.name}</p>
-        <p>{post.frontmatter.email}</p>
-        <p>{post.frontmatter.tel}</p>
-        <p>{post.frontmatter.website}</p>
-        <Img fluid={post.frontmatter.bannerImg.childImageSharp.fluid} />
-        <Img fluid={post.frontmatter.avatarImg.childImageSharp.fluid} />
-        <div dangerouslySetInnerHTML={{ __html: post.html}} />
+      <div className={classes.ClubPostContainer}>
+        <div>
+          <h1>{post.frontmatter.title}</h1>
+          <Img className={classes.BannerImage} fixed={post.frontmatter.bannerImg.childImageSharp.fixed} />
+          <div dangerouslySetInnerHTML={{ __html: post.html}} />
+        </div>
+        <div className={classes.OuterAvatarContainer}>
+          <div className={classes.AvatarContainer}>
+            <Img className={classes.AvatarImage} fixed={post.frontmatter.avatarImg.childImageSharp.fixed} />
+            <div className={classes.AvatarDetails}>
+              <p><b>Name: </b>{post.frontmatter.name}</p>
+              <p><b>Email: </b>{post.frontmatter.email}</p>
+              <p><b>Tel: </b>{post.frontmatter.tel}</p>
+              <p><b>Webseite: </b>{post.frontmatter.website}</p>
+            </div>
+          </div>
+        </div>
       </div>
     </Layout>
   );
@@ -34,15 +45,15 @@ export const query = graphql`
         website
         bannerImg {
           childImageSharp {
-            fluid(maxWidth: 400) {
-              ...GatsbyImageSharpFluid_noBase64
+            fixed(width: 300, height: 225) {
+              ...GatsbyImageSharpFixed
             }
           }
         }
         avatarImg {
           childImageSharp {
-            fluid(maxWidth: 150) {
-              ...GatsbyImageSharpFluid_noBase64
+            fixed(width: 250) {
+              ...GatsbyImageSharpFixed
             }
           }
         }
