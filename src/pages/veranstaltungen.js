@@ -58,7 +58,7 @@ class Veranstaltungen extends Component {
   render() {
     const { startDate, endDate, events, filteredEvents } = this.state;
 
-    const content = filteredEvents.length > 0 ? events : <p>Keine Veranstaltungen gefunden!</p>;
+    const content = filteredEvents.length > 0 ? events : <p style={{textAlign: 'center'}}>Keine Veranstaltungen gefunden!</p>;
     
     return (
       <Layout>
