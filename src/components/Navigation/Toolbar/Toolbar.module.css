@@ -1,11 +1,10 @@
 .Toolbar {
-  width: 80%;
   margin: 0 auto;
   display: flex;
-  min-height: 58px;
   justify-content: space-between;
   flex-direction: row;
   align-items: center;
+  text-align: center;
 }
 
 .Toolbar a {
@@ -28,12 +27,22 @@
 
 .Logo {
   height: 80%;
-  text-align: center;
+  display: inline-block;
 }
 
-@media (max-width: 499px) {
+.Title {
+  vertical-align: middle;
+  font-size: 1.5vw;
+  line-height: 0;
+}
+
+@media (max-width: 899px) {
   .DesktopOnly, .Title {
     display: none;
+  }
+
+  .Toolbar {
+    display: block;
   }
 
   .Toolbar a {

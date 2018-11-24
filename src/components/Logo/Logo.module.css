@@ -2,8 +2,10 @@
   padding: 8px;
   height: 100%;
   border-radius: 5px;
+  display: inline-block;
 }
 
 .LogoImg {
   height: 100%;
+  vertical-align: top;
 }

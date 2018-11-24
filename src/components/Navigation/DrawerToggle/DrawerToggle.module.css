@@ -14,7 +14,7 @@
 
 .DrawerToggle, .ShowClose {
   position: absolute;
-  top: 17px;
+  top: 22px;
   left: 0;
   width: 30px;
   height: 30px;
@@ -95,7 +95,7 @@
   }
 }
 
-@media (min-width: 500px) {
+@media (min-width: 900px) {
   .DrawerToggleContainer {
     display: none;
   }

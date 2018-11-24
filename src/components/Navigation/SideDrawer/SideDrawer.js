@@ -18,9 +18,6 @@ const sideDrawer = ({open, closed}) => {
     <Fragment>
       <Backdrop show={open} clicked={closed} />
       <div className={attachedClasses.join(' ')} onClick={closed}>
-        <div>
-          <Logo />
-        </div>
         <nav>
           <NavigationItems />
         </nav>

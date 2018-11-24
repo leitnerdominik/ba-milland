@@ -15,8 +15,8 @@ const toolbar = ({siteTitle, drawerClicked, sideDrawerOpen}) => (
         <Link to="/">
           <Logo />
         </Link>
-      </div>
         <Link className={classes.Title} to="/">{siteTitle}</Link>
+      </div>
       <nav className={classes.DesktopOnly}>
         <NavigationItems />
       </nav>

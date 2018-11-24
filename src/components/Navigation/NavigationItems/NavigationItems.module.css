@@ -6,7 +6,7 @@
   flex-flow: column;
 }
 
-@media (min-width: 500px) {
+@media (min-width: 900px) {
   .NavigationItems {
     flex-flow: row;
   }

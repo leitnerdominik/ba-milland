@@ -1,5 +1,5 @@
 .body-content {
-  margin-top: 58px;
+  margin-top: 56px;
   padding-bottom: 65px;
 }
 
@@ -22,7 +22,7 @@ html, body  {
   height: 100%;
 }
 
-@media(min-width: 500px) {
+@media(min-width: 900px) {
   .body-content {
     margin-top: 71px;
   }

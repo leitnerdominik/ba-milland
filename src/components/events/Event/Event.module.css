@@ -4,6 +4,7 @@
   margin: 40px auto;
   text-align: justify;
   border-bottom: 1px solid rgba(0, 0, 0, 0.4);
+  padding: 16px 0;
 }
 
 .EventContainer h3,
