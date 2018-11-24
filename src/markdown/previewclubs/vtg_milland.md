@@ -1,7 +1,7 @@
 ---
-title: "Katholische Frauenbewegeung Milland"
+title: "Volkstanzgruppe Brixen"
 section: previewclub
-cover_image: "../../images/previewclubs/cover_kfb.jpg"
-link: "/sweet-pandas-eating-sweets/"
+cover_image: "../../images/previewclubs/cover_vtg.jpg"
+link: "markdown/clubs/volkstanzgruppe"
 ---
-Wir sind eine Gemeinschaft von Frauen in der Kirche, die mit Phantasie und Einsatzfreude die eigenen Begabungen einbringen und andere Frauen ermutigen, gleichberechtigt und partnerschaftlich am Leben der Kirche teilzuhaben.
+Der traditionspflegende Verein ist um die Pflege, Förderung und Erhaltung des alpenländischen Volkstanzes, der Volksmusik, der Tracht und des Brauchtums bemüht.

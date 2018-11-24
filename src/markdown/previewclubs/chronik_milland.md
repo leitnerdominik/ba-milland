@@ -1,7 +1,7 @@
 ---
-title: "Katholische Frauenbewegeung Milland"
+title: "Chronik Milland"
 section: previewclub
-cover_image: "../../images/previewclubs/cover_kfb.jpg"
-link: "/sweet-pandas-eating-sweets/"
+cover_image: "../../images/previewclubs/cover_chronik.jpg"
+link: "markdown/clubs/chronik"
 ---
-Wir sind eine Gemeinschaft von Frauen in der Kirche, die mit Phantasie und Einsatzfreude die eigenen Begabungen einbringen und andere Frauen ermutigen, gleichberechtigt und partnerschaftlich am Leben der Kirche teilzuhaben.
+Der Wert einer Jahreschronik ist unschätzbar und gewinnt vielfach erst mit der Zeit eine immer größere Bedeutung und Wertschätzung.

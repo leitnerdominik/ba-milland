@@ -1,7 +1,7 @@
 ---
-title: "Chronik Milland"
+title: "KIGO-Gruppe Milland"
 section: previewclub
-cover_image: "../../images/previewclubs/cover_chronik.jpg"
-link: "/sweet-pandas-eating-sweets/"
+cover_image: "../../images/previewclubs/cover_kigo.jpg"
+link: "markdown/clubs/kigo"
 ---
-Der Wert einer Jahreschronik ist unschätzbar und gewinnt vielfach erst mit der Zeit eine immer größere Bedeutung und Wertschätzung.
+Die Kindergottesdienstgruppe gestaltet jeden Sonntag im Schuljahr parallel zur Eucharistiefeier um 9.00 Uhr im Jugendheim einen Kindergottesdienst, bei dem alle Kinder bis ungefähr zur Erstkommunion herzlich willkommen sind.
