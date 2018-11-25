@@ -9,7 +9,7 @@ const navigationItems = () => (
     <NavigationItem link="/">Home</NavigationItem>
     <NavigationItem link="/veranstaltungen">Veranstaltungen</NavigationItem>
     <NavigationItem link="/previewclubs">Vereine</NavigationItem>
-    <NavigationItem link="/page-2">Geschichte</NavigationItem>
+    <NavigationItem link="/geschichte">Geschichte</NavigationItem>
     <NavigationItem link="/page-2">Pfarrblatt</NavigationItem>
     <NavigationItem link="/page-2">MiZe</NavigationItem>
   </ul>

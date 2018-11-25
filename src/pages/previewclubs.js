@@ -17,7 +17,6 @@ class Clubs extends Component {
   }
 
   componentWillMount() {
-    console.log(this.props.data);
     const markdowns = this.props.data.allMarkdownRemark.edges.map(({node}, index) => {
       return {
         id: node.id,
@@ -28,7 +27,6 @@ class Clubs extends Component {
       }
     });
 
-    console.log(markdowns);
     this.setState({markdownArr: markdowns});
   }
 
