@@ -1,0 +1,9 @@
+.EventContainer {
+  width: 80%;
+  margin: 0 auto;
+  padding: 32px;
+}
+
+.EventContainer h1 {
+  color: #02b839;
+}

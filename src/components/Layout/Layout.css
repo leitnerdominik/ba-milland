@@ -1,5 +1,5 @@
-.bodyContent {
-  margin-top: 71px;
+.body-content {
+  margin-top: 56px;
   padding-bottom: 65px;
 }
 
@@ -20,4 +20,10 @@ html, body  {
 
 #___gatsby > div {
   height: 100%;
+}
+
+@media(min-width: 900px) {
+  .body-content {
+    margin-top: 71px;
+  }
 }

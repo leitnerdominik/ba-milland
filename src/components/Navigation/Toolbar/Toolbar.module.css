@@ -1,10 +1,15 @@
 .Toolbar {
-  width: 80%;
   margin: 0 auto;
   display: flex;
   justify-content: space-between;
   flex-direction: row;
   align-items: center;
+  text-align: center;
+}
+
+.Toolbar a {
+  text-decoration: none;
+  color: black;
 }
 
 .NavContainer {
@@ -18,4 +23,29 @@
   box-sizing: border-box;
   z-index: 90;
   box-shadow: 0 1px 3px rgba(0,0,0,0.12),0 1px 2px rgba(0,0,0,0.24);
+}
+
+.Logo {
+  height: 80%;
+  display: inline-block;
+}
+
+.Title {
+  vertical-align: middle;
+  font-size: 1.5vw;
+  line-height: 0;
+}
+
+@media (max-width: 899px) {
+  .DesktopOnly, .Title {
+    display: none;
+  }
+
+  .Toolbar {
+    display: block;
+  }
+
+  .Toolbar a {
+    font-size: 16px;
+  }
 }

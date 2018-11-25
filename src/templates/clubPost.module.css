@@ -1,0 +1,59 @@
+.ClubPostContainer {
+  width: 80%;
+  margin: 90px auto 20px auto;
+}
+
+.ClubPostContainer a {
+  text-decoration: none;
+  color: #02b839;
+}
+
+.ClubPostContainer a:hover {
+  text-decoration: underline;
+}
+
+.BannerImage {
+  float: left;
+  margin-right: 1.45rem;
+  /* max-width: 300px; */
+}
+
+.OuterPersonContainer {
+  display: inline-block;
+}
+
+.PersonContainer {
+  display: flex;
+}
+
+.AvatarContainer {
+  position: relative;
+}
+
+.AvatarImage {
+  border-radius: 6%;
+  margin: 0;
+  height: 100%;
+  width: 250px;
+}
+
+.Shadow {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  border-radius: 20px;
+  top: 0;
+  left: 0;
+}
+
+.AvatarDetails {
+  border-left: 1px solid black;
+  padding: 16px;
+  height: 80%;
+  margin: auto 20px;
+}
+
+.Content {
+  text-align: justify;
+}

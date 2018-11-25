@@ -4,10 +4,12 @@ import moment from 'moment';
 
 import Event from './Event/Event';
 
+import classes from './EventsPreview.module.css';
+
 const events = () => (
   <StaticQuery
     query={graphql`query {
-      allMarkdownRemark(sort: { fields: [frontmatter___date], order: DESC }) {
+      allMarkdownRemark(sort: { fields: [frontmatter___date], order: ASC }) {
         totalCount
         edges {
           node {
@@ -41,10 +43,10 @@ const events = () => (
           path={node.fields.slug}/>
       ));
 
-      const content = events.length > 0 ? events : <p>Keine Einträge gefunden!</p>
+      const content = events.length > 0 ? events : <p className={classes.InfoText}>Keine Einträge gefunden!</p>
       return (
       <>
-        <h2>Bevorstehende Veranstaltungen</h2>
+        <h2 className={classes.Title}>Bevorstehende Veranstaltungen</h2>
         {content}
       </>
       )}} 

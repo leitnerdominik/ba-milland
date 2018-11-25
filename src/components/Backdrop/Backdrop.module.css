@@ -1,0 +1,16 @@
+.Backdrop {
+  height: 100%;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 100;
+  position: fixed;
+  left: 0;
+  top: 0;
+  margin-top: 56px;
+}
+
+@media(min-width: 900px) {
+  .Backdrop {
+    margin-top: 71px;
+  }
+}
