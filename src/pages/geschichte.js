@@ -1,20 +1,23 @@
 import React from 'react';
 import { graphql } from 'gatsby';
-import Img from 'gatsby-image';
+
 
 import Layout from '../components/Layout/Layout';
-import ModalImage from '../components/ModalImage/ModalImage';
+import PhotoGallery from '../components/PhotoGallery/PhotoGallery';
 
 import classes from './geschichte.module.css';
 
 const geschichte = ({ data }) => {
   const img = data.allFile.edges;
-  const images = img.map(({ node }) => (
-    <ModalImage
-      key={node.childImageSharp.id}
-      fluid={node.childImageSharp.fluid}
-    />
-  ));
+  const images = img.map(({ node }) => {
+    const image = node.childImageSharp.fluid;
+    return {
+      src: image.src,
+      width: image.presentationWidth,
+      height: image.presentationHeight,
+    }
+    
+  });
 
   console.log(images);
   return (
@@ -57,7 +60,7 @@ const geschichte = ({ data }) => {
         </div>
         <h3>Milland alt und neu</h3>
         <div className={classes.ImageContainer}>
-          {images}
+          <PhotoGallery images={images} columns={3} />
         </div>
       </div>
     </Layout>
@@ -74,7 +77,9 @@ export const query = graphql`
           childImageSharp {
             id
             fluid(maxWidth: 700) {
-              ...GatsbyImageSharpFluid
+              src
+              presentationWidth
+              presentationHeight
             }
           }
         }

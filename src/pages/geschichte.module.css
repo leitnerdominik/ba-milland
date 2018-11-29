@@ -6,11 +6,3 @@
 .Content {
   padding: 16px 0;
 }
-
-.ImageContainer {
-  display: grid;
-  padding: 16px 0;
-  box-sizing: border-box;
-  grid-template-columns: repeat(3, 1fr);
-  grid-gap: 12px;
-}
