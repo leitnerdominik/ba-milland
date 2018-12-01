@@ -3,7 +3,7 @@ import { graphql } from 'gatsby';
 import moment from 'moment';
 
 import Layout from '../components/Layout/Layout';
-import Event from '../components/events/Event/Event';
+import Event from '../components/EventsPreview/Event/Event';
 import DateFilter from '../components/DateFilter/DateFilter';
 
 import classes from './veranstaltungen.module.css';
@@ -23,7 +23,7 @@ class Veranstaltungen extends Component {
     this.endDateChangeHandler = this.endDateChangeHandler.bind(this);
   }
 
-  componentWillMount() {
+  UNSAFE_componentWillMount() {
     const events = this.props.data.allMarkdownRemark.edges.map(({ node }) => (
       <Event
         key={node.id}
@@ -48,23 +48,28 @@ class Veranstaltungen extends Component {
   filterEvents() {
     const { events, startDate, endDate } = this.state;
     const filteredEvents = events.filter(event => {
-      const pubDate = moment(event.props.date, "DD.MM.YYYY").toDate();
-      return pubDate >= startDate && pubDate <= endDate;
+      if(startDate !== null && endDate !== null) {
+        const pubDate = moment(event.props.date, "DD.MM.YYYY").toDate();
+        console.log('return dating', pubDate >= startDate && pubDate <= endDate)
+        return pubDate >= startDate && pubDate <= endDate;
+      }
+      return true;
     })
 
+    console.log(filteredEvents);
     this.setState({ filteredEvents });
   }
 
   render() {
-    const { startDate, endDate, events, filteredEvents } = this.state;
+    const { startDate, endDate, filteredEvents } = this.state;
 
-    const content = filteredEvents.length > 0 ? events : <p style={{textAlign: 'center'}}>Keine Veranstaltungen gefunden!</p>;
+    const content = filteredEvents.length > 0 ? filteredEvents : <p style={{textAlign: 'center'}}>Keine Veranstaltungen gefunden!</p>;
     
     return (
       <Layout>
         <div>
           <div className={classes.DateContainer}>
-            <span>Filter:</span>
+            <span>Filter</span>
             <DateFilter
               date={startDate}
               startDate={startDate}
