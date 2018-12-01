@@ -11,8 +11,8 @@ export default ({ data }) => {
     <Layout>
       <div className={classes.EventContainer}>
         <h1>{post.frontmatter.title}</h1>
-        <h3><b>Veranstaltungsort: </b> {post.frontmatter.place}</h3>
-        <h3><b>Zeit: </b> {post.frontmatter.time}</h3>
+        <p><b>Veranstaltungsort: </b> {post.frontmatter.place}</p>
+        <p><b>Zeit: </b> {post.frontmatter.time}</p>
         <div dangerouslySetInnerHTML={{ __html: post.html}} />
       </div>
     </Layout>

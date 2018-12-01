@@ -7,3 +7,9 @@
 .EventContainer h1 {
   color: #02b839;
 }
+
+@media(max-width: 500px) {
+  .EventContainer {
+    width: 100%;
+  }
+}
