@@ -15,7 +15,6 @@
 .BannerImage {
   float: left;
   margin-right: 1.45rem;
-  /* max-width: 300px; */
 }
 
 .OuterPersonContainer {
@@ -28,6 +27,7 @@
 
 .AvatarContainer {
   position: relative;
+  display: inline-block;
 }
 
 .AvatarImage {
@@ -35,16 +35,7 @@
   margin: 0;
   height: 100%;
   width: 250px;
-}
-
-.Shadow {
-  position: absolute;
-  width: 100%;
-  height: 100%;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-  border-radius: 20px;
-  top: 0;
-  left: 0;
 }
 
 .AvatarDetails {
@@ -54,6 +45,34 @@
   margin: auto 20px;
 }
 
+.Name {
+  font-weight: bold;
+  font-size: 1.2em;
+  margin: 0 0 1.45rem 12px;
+}
+
+.AvatarDetails svg {
+  margin: 0 12px;
+}
+
 .Content {
   text-align: justify;
+}
+
+@media(max-width: 800px) {
+  .PersonContainer {
+    flex-direction: column;
+  }
+
+  .AvatarDetails {
+    padding: 0;
+    border: none;
+    margin: 20px 0;
+  }
+}
+
+@media(max-width: 700px) {
+  .BannerImage {
+    float: none;
+  }
 }
