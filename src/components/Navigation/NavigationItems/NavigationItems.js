@@ -6,12 +6,12 @@ import classes from './NavigationItems.module.css';
 
 const navigationItems = () => (
   <ul className={classes.NavigationItems}>
-    <NavigationItem link="/">Home</NavigationItem>
-    <NavigationItem link="/veranstaltungen">Veranstaltungen</NavigationItem>
-    <NavigationItem link="/previewclubs">Vereine</NavigationItem>
-    <NavigationItem link="/geschichte">Geschichte</NavigationItem>
-    <NavigationItem link="/page-2">Pfarrblatt</NavigationItem>
-    <NavigationItem link="/page-2">MiZe</NavigationItem>
+    <NavigationItem path="/">Home</NavigationItem>
+    <NavigationItem path="/veranstaltungen">Veranstaltungen</NavigationItem>
+    <NavigationItem path="/previewclubs">Vereine</NavigationItem>
+    <NavigationItem path="/geschichte">Geschichte</NavigationItem>
+    <NavigationItem path="http://www.pfarrei-milland.it/Aktuelles%20PDF/PDFdruck.pdf" extern>Pfarrblatt</NavigationItem>
+    <NavigationItem path="/page-2">MiZe</NavigationItem>
   </ul>
 );
 
