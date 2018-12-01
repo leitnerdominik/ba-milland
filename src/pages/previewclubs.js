@@ -16,7 +16,7 @@ class Clubs extends Component {
     }
   }
 
-  componentWillMount() {
+  UNSAFE_componentWillMount() {
     const markdowns = this.props.data.allMarkdownRemark.edges.map(({node}, index) => {
       return {
         id: node.id,
