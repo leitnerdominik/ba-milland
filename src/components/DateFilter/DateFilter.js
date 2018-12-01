@@ -17,7 +17,7 @@ const filter = (props) => {
   } = props;
 
   return (
-    <div className={classes.FilterContainer}>
+    <div className={classes.Container}>
       <span>{description}</span>
       <div>
         <DatePicker
@@ -31,6 +31,7 @@ const filter = (props) => {
           onSelect={changed}
           onChange={changed}
           placeholderText={placeholder}
+          isClearable
         />
       </div>
     </div>

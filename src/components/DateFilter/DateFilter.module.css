@@ -1,7 +1,6 @@
-.FilterContainer {
+.Container {
   display: inline-block;
-  text-align: left;
-  margin-left: 16px;
+  margin: 0 12px;
 }
 
 .Datepicker {
@@ -14,4 +13,11 @@
 
 .Datepicker:focus {
   outline: none;
+}
+
+@media(max-width: 700px) {
+  .Container {
+    display: block;
+    margin: 0;
+  }
 }
