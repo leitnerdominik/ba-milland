@@ -22,6 +22,7 @@ const typography = new Typography({
   headerWeight: '600',
   bodyWeight: 400,
   boldWeight: 700,
+  scaleRatio: 1.3,
 });
 
 export default typography;
