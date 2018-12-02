@@ -1,9 +1,7 @@
 ---
-name: ttttttest
-von: '02.12.2018 21:21'
-bis: '02.12.2018 21:21'
-ort: Brixen
+date_from: 30.11.2018
+time_from: '19:00'
 club: Frauenbewegung
-title: Tttetstets
+title: ttest
 ---
-tttttttest
+# tttttttest
