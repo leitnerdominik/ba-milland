@@ -17,6 +17,7 @@ const events = () => (
             frontmatter {
               title
               date(formatString: "DD.MM.YYYY", locale: "de")
+              time
             }
             fields {
               slug
@@ -39,8 +40,10 @@ const events = () => (
           key={node.id}
           title={node.frontmatter.title}
           date={node.frontmatter.date}
+          time={node.frontmatter.time}
+          path={node.fields.slug}
           content={node.excerpt}
-          path={node.fields.slug}/>
+          />
       ));
 
       const content = events.length > 0 ? events : <p className={classes.InfoText}>Keine Einträge gefunden!</p>
