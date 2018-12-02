@@ -1,8 +1,9 @@
 ---
-name: noatest
-timeFrom: 2018-12-04T19:00:00.000Z
-timeTo: 'December 14, 2018 9:00 PM'
+name: noatest7
+von: '28.11.2018 22:00'
+bis: Invalid date
+ort: Jakob Steiner haus
 club: Bildungsausschuss
 title: noatest
 ---
-**noatest**
+**noatest7**
