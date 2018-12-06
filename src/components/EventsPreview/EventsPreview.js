@@ -9,15 +9,16 @@ import classes from './EventsPreview.module.css';
 const events = () => (
   <StaticQuery
     query={graphql`query {
-      allMarkdownRemark(sort: { fields: [frontmatter___date], order: ASC }) {
-        totalCount
+      allMarkdownRemark(sort: { fields: [frontmatter___date_from], order: ASC }) {
         edges {
           node {
             id
             frontmatter {
               title
-              date(formatString: "DD.MM.YYYY", locale: "de")
-              time
+              date_from
+              date_until
+              time_from
+              time_until
             }
             fields {
               slug
@@ -31,7 +32,7 @@ const events = () => (
     render={data => {
       const postsOlderThanToday = data.allMarkdownRemark.edges.filter(({node}) => {
         const today = moment().startOf('day');
-        const postDate = (moment(node.frontmatter.date, "DD.MM.YYYY"));
+        const postDate = (moment(node.frontmatter.date_from, "DD.MM.YYYY"));
         return today.isSameOrBefore(postDate);
       });
 
@@ -39,8 +40,10 @@ const events = () => (
         <Event 
           key={node.id}
           title={node.frontmatter.title}
-          date={node.frontmatter.date}
-          time={node.frontmatter.time}
+          date_from={node.frontmatter.date_from}
+          date_until={node.frontmatter.date_until}
+          time_from={node.frontmatter.time_from}
+          time_until={node.frontmatter.time_until}
           path={node.fields.slug}
           content={node.excerpt}
           />

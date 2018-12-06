@@ -103,16 +103,12 @@ export default Veranstaltungen;
 
 export const query = graphql`
 query {
-  allMarkdownRemark(sort: {fields: [frontmatter___date], order: DESC}, filter: {frontmatter: {section: {eq: "event"}}}) {
+  allMarkdownRemark(sort: {fields: [frontmatter___date_from], order: DESC}, filter: {frontmatter: {section: {eq: "event"}}}) {
     edges {
       node {
         id
         frontmatter {
           title
-          date_from
-          date_until
-          time_from
-          time_until
         }
         fields {
           slug
