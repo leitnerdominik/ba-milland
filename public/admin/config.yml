@@ -1,16 +1,59 @@
 backend:
-  name: test-repo
+  name: github
+  repo: leitnerdominik/ba-milland
 
 media_folder: static/assets
 public_folder: assets
 
 collections:
-  - name: blog
-    label: Blog
-    folder: blog
+  - name: event
+    label: event
+    folder: src/markdown/events
     create: true
+    slug: '{{day}}-{{month}}-{{year}}_{{slug}}'
     fields:
-      - { name: path, label: Path }
-      - { name: date, label: Date, widget: date }
+      - { name: date_from, label: Datum von, widget: date, format: 'DD.MM.YYYY' }
+      - {
+          name: date_until,
+          label: Datum bis (Optional),
+          widget: date,
+          format: 'DD.MM.YYYY',
+          required: false,
+        }
+      - {
+          name: time_from,
+          label: Zeit von (Optional),
+          widget: string,
+          required: false,
+        }
+      - {
+          name: time_until,
+          label: Zeit bis (Optional),
+          widget: string,
+          required: false,
+        }
+      - { name: place, label: Veranstaltungsort (Optional), widget: string, required: false }
+      - {
+          name: club,
+          label: Verein,
+          widget: select,
+          options:
+            [
+              'Bildungsausschuss',
+              'Chronik',
+              'Frauenbewegung',
+              'Frauenchor',
+              'Freiwillige Feuerwehr',
+              'Kigo',
+              'Krippenfreunde',
+              'KVW',
+              'Mize',
+              'Musikkapelle',
+              'Seniorenklub',
+              'SVP',
+              'Vereinsgemeinschaft',
+              'Volkstanzgruppe',
+            ],
+        }
       - { name: title, label: Title }
-      - { name: body, label: Body, widget: markdown }
+      - { name: body, label: Body, widget: markdown, required: false }

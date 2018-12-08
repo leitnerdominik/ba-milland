@@ -24,15 +24,22 @@ class Veranstaltungen extends Component {
   }
 
   UNSAFE_componentWillMount() {
-    const events = this.props.data.allMarkdownRemark.edges.map(({ node }) => (
-      <Event
-        key={node.id}
-        title={node.frontmatter.title}
-        date={node.frontmatter.date}
-        content={node.excerpt}
-        path={node.fields.slug}
-      />
-    ));
+    const events = this.props.data.allMarkdownRemark.edges.map(({ node }) => {
+
+      const metaData  = node.frontmatter;
+      return (
+        <Event
+          key={node.id}
+          title={metaData.title}
+          date_from={metaData.date_from}
+          date_until={metaData.date_until}
+          time_from={metaData.time_from}
+          time_until={metaData.time_until}
+          content={node.excerpt}
+          path={node.fields.slug}
+        />
+      );
+    });
 
     this.setState({ events, filteredEvents: events });
   }
@@ -50,13 +57,11 @@ class Veranstaltungen extends Component {
     const filteredEvents = events.filter(event => {
       if(startDate !== null && endDate !== null) {
         const pubDate = moment(event.props.date, "DD.MM.YYYY").toDate();
-        console.log('return dating', pubDate >= startDate && pubDate <= endDate)
         return pubDate >= startDate && pubDate <= endDate;
       }
       return true;
     })
 
-    console.log(filteredEvents);
     this.setState({ filteredEvents });
   }
 
@@ -100,13 +105,16 @@ export default Veranstaltungen;
 
 export const query = graphql`
 query {
-  allMarkdownRemark(sort: {fields: [frontmatter___date], order: DESC}, filter: {frontmatter: {section: {eq: "event"}}}) {
+  allMarkdownRemark(sort: {fields: [frontmatter___date_from], order: DESC}, filter: {frontmatter: {section: {eq: "event"}}}) {
     edges {
       node {
         id
         frontmatter {
           title
-          date(formatString: "DD.MM.YYYY", locale: "de")
+          date_from
+          date_until
+          time_from
+          time_until
         }
         fields {
           slug
