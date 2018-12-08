@@ -31,9 +31,11 @@ class Veranstaltungen extends Component {
         <Event
           key={node.id}
           title={metaData.title}
-          date={metaData.date}
+          date_from={metaData.date_from}
+          date_until={metaData.date_until}
+          time_from={metaData.time_from}
+          time_until={metaData.time_until}
           content={node.excerpt}
-          time={metaData.time}
           path={node.fields.slug}
         />
       );
@@ -109,6 +111,10 @@ query {
         id
         frontmatter {
           title
+          date_from
+          date_until
+          time_from
+          time_until
         }
         fields {
           slug
