@@ -1,6 +1,6 @@
 .EventContainer {
   position: relative;
-  width: 80%;
+  /*width: 80%;*/
   margin: 10px auto;
   text-align: justify;
   border-bottom: 1px solid rgba(0, 0, 0, 0.4);

@@ -12,7 +12,7 @@ export default () => (
           relativePath: { eq: "education-min.jpg" }
         ) {
           childImageSharp {
-            fluid(maxWidth: 1000,  maxHeight: 400) {
+            fluid(maxWidth: 2197,  maxHeight: 1466) {
               ...GatsbyImageSharpFluid_noBase64 
             }
           }

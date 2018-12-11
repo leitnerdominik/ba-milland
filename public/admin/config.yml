@@ -47,9 +47,9 @@ collections:
       - {
           name: section,
           label: Section,
-          default: "events",
+          default: "event",
           widget: select,
-          options: ["events"],
+          options: ["event"],
         }
       - {
           name: club,

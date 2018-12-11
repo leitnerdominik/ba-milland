@@ -1,10 +1,27 @@
-.DateContainer {
+.Container {
   width: 80%;
-  margin: 20px auto;
+  margin: 0 auto;
+}
+
+.DateContainer {
+  margin-bottom: 20px;
   margin-top: 90px;
 }
 
 .DateContainer > span {
   font-size: 26px;
   font-weight: bold;
+}
+
+.NewEvent {
+  display: inline-block;
+  text-decoration: none;
+  color: #02b839;
+  font-size: 28px;
+  font-weight: bold;
+  margin-bottom: 32px;
+}
+
+.NewEvent:hover {
+  text-decoration: underline;
 }

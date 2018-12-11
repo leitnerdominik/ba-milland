@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { graphql } from 'gatsby';
+import { graphql, Link } from 'gatsby';
 import moment from 'moment';
 
 import Layout from '../components/Layout/Layout';
@@ -72,7 +72,7 @@ class Veranstaltungen extends Component {
     
     return (
       <Layout>
-        <div>
+        <div className={classes.Container}>
           <div className={classes.DateContainer}>
             <span>Filter</span>
             <DateFilter
@@ -94,6 +94,7 @@ class Veranstaltungen extends Component {
               description="bis"
             />
           </div>
+          <Link className={classes.NewEvent} to="/new_event">Neue Veranstaltung</Link>
           {content}
         </div>
       </Layout>
