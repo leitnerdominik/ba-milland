@@ -1,0 +1,20 @@
+.InputContainer {
+  width: 100%;
+  box-sizing: border-box;
+  margin-bottom: 25px;
+}
+
+.Label {
+  display: block;
+  font-weight: bold;
+}
+
+.Input {
+  width: 100%;
+}
+
+.Optional {
+  font-weight: 200;
+  font-style: italic;
+  font-size: 16px;
+}

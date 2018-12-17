@@ -1,4 +1,6 @@
 import React from "react";
+import DatePicker from "react-datepicker";
+import "react-datepicker/dist/react-datepicker.css";
 
 import classes from "./Input.module.css";
 
@@ -11,6 +13,10 @@ const input = props => {
     inputClasses.push(classes.Invalid);
     validationError = <p>Bitte einen gültigen Wert eingeben!</p>;
   }
+
+  const optional = !props.shouldValidate.required ? (
+    <span className={classes.Optional}> - Optional</span>
+  ) : null;
 
   switch (props.elementType) {
     case "input":
@@ -48,6 +54,15 @@ const input = props => {
         </select>
       );
       break;
+    case "date":
+      inputElement = (
+        <DatePicker
+          dateFormat="DD.MM.YYYY"
+          /* placeholderText="Test" */
+          {...props.elementConfig}
+        />
+      );
+      break;
     default:
       inputElement = (
         <input
@@ -59,14 +74,13 @@ const input = props => {
       );
   }
 
-
   return (
     <div className={classes.InputContainer}>
-      <label className={classes.Label}>{props.label}</label>
+      <label className={classes.Label}>{props.label}{optional}</label>
       {inputElement}
       {validationError}
     </div>
-  )
+  );
 };
 
 export default input;
