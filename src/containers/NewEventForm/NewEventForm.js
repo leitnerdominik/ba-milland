@@ -145,6 +145,20 @@ class NewEventForm extends Component {
           },
           valid: false,
           touched: false
+        },
+        textbody: {
+          label: "Text",
+          elementType: "textarea",
+          elementConfig: {
+            rows: 4,
+            cols: 50,
+          },
+          value: "",
+          validation: {
+            required: false,
+          },
+          valid: false,
+          touched: false,
         }
       },
       formIsValid: false
