@@ -1,14 +1,14 @@
 import React from 'react';
 
 import Layout from '../components/Layout/Layout';
-import HeaderImage from '../components/HeaderImage/HeaderImage';
+import Hero from '../components/Hero/Hero';
 import EventsPreview from '../components/EventsPreview/EventsPreview';
 
 const IndexPage = () => {
    
   return (
     <Layout>
-      <HeaderImage />
+      <Hero />
       <EventsPreview />
     </Layout>
   );
