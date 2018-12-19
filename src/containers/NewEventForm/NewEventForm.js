@@ -96,7 +96,7 @@ class NewEventForm extends Component {
           elementConfig: {
             placeholderText: "TT/MM/JJJJ"
           },
-          value: "",
+          value: null,
           validation: {
             required: true
           },
@@ -109,7 +109,7 @@ class NewEventForm extends Component {
           elementConfig: {
             placeholderText: "TT/MM/JJJJ"
           },
-          value: "",
+          value: null,
           validation: {
             required: false
           },
@@ -125,6 +125,7 @@ class NewEventForm extends Component {
           },
           value: "",
           validation: {
+            isTime: true,
             required: false
           },
           valid: false,
@@ -139,6 +140,7 @@ class NewEventForm extends Component {
           },
           value: "",
           validation: {
+            isTime: true,
             required: false
           },
           valid: false,
@@ -160,21 +162,45 @@ class NewEventForm extends Component {
       isValid = emailPattern.test(value) && isValid;
     }
 
+    if (rules.isTime) {
+      const timePattern = /^\d{2}:\d{2}$/;
+      isValid = (timePattern.test(value) || value.trim() === "") && isValid;
+    }
+
     return isValid;
-  }
+  };
 
   inputChangedHandler = (event, formName) => {
 
-    const updateFormElement = {...this.state.form[formName], 
-      value: event.target.value,
-      touched: true,
-      valid: this.checkValidation(event.target.value, this.state.form[formName].validation),
-    }
+    console.log(event);
 
-    const updateForm = {...this.state.form, [formName]: updateFormElement};
+    const value = event.target ? event.target.value : event; // if it's not an input element, like date, select
+    const updateFormElement = {
+      ...this.state.form[formName],
+      value
+    };
+
+    const updateForm = { ...this.state.form, [formName]: updateFormElement };
+
+    this.setState({
+      form: updateForm
+    });
+  };
+
+  focusOutHandler = (event, formName) => {
+    const updateFormElement = {
+      ...this.state.form[formName],
+      touched: true,
+      valid: this.checkValidation(
+        event.target.value,
+        this.state.form[formName].validation
+      )
+    };
+
+    const updateForm = { ...this.state.form, [formName]: updateFormElement };
 
     let formIsValid = true;
-    for(let key in updateForm) {
+    for (let key in updateForm) {
       formIsValid = updateForm[key].valid && formIsValid;
     }
 
@@ -182,8 +208,7 @@ class NewEventForm extends Component {
       form: updateForm,
       formIsValid
     });
-
-  }
+  };
 
   render() {
     const formElements = [];
@@ -206,7 +231,8 @@ class NewEventForm extends Component {
             touched={formElement.config.touched}
             invalid={!formElement.config.valid}
             shouldValidate={formElement.config.validation}
-            changed={(event) => this.inputChangedHandler(event, formElement.id)}
+            changed={event => this.inputChangedHandler(event, formElement.id)}
+            focusOut={event => this.focusOutHandler(event, formElement.id)}
           />
         ))}
       </form>
