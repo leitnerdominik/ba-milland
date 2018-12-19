@@ -12,6 +12,8 @@ const input = props => {
   if (props.touched && props.invalid && props.shouldValidate) {
     inputClasses.push(classes.Invalid);
     validationError = <p>Bitte einen gültigen Wert eingeben!</p>;
+  } else if (props.touched) {
+    inputClasses.push(classes.Valid);
   }
 
   const optional = !props.shouldValidate.required ? (
@@ -23,6 +25,7 @@ const input = props => {
       inputElement = (
         <input
           className={inputClasses.join(" ")}
+          onBlur={props.focusOut}
           {...props.elementConfig}
           value={props.value}
           onChange={props.changed}
@@ -58,8 +61,10 @@ const input = props => {
       inputElement = (
         <DatePicker
           dateFormat="DD.MM.YYYY"
-          /* placeholderText="Test" */
           {...props.elementConfig}
+          onChange={props.changed}
+          onSelect={props.changed}
+          selected={props.value}
         />
       );
       break;
@@ -76,7 +81,10 @@ const input = props => {
 
   return (
     <div className={classes.InputContainer}>
-      <label className={classes.Label}>{props.label}{optional}</label>
+      <label className={classes.Label}>
+        {props.label}
+        {optional}
+      </label>
       {inputElement}
       {validationError}
     </div>

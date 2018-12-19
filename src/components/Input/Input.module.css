@@ -18,3 +18,13 @@
   font-style: italic;
   font-size: 16px;
 }
+
+.Valid {
+  border: 2px solid green;
+  background-color: rgba(121, 238, 117, 0.3);
+}
+
+.Invalid {
+  border: 2px solid red;
+  background-color: rgba( 203, 29, 29, 0.3 );
+}
