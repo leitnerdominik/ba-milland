@@ -13,7 +13,7 @@
 
 .HeroContainer::before {
   animation: fade-slide-down 2s 0.5s cubic-bezier(0, 0.5, 0, 1) forwards;
-  background: url("../../images/education-min.jpg") no-repeat bottom;
+  background: url("../../images/logo-header.jpg") no-repeat bottom;
   background-size: cover;
   content: "";
   opacity: 0;
@@ -62,5 +62,24 @@
 @keyframes rotate-up {
   100% {
     transform: rotateZ(-4deg);
+  }
+}
+
+
+.Logo {
+  margin: 0;
+}
+
+.ContentContainer {
+  font-size: 6vw;  
+}
+
+.LogoContainer {
+  font-weight: bold;
+}
+
+@media (max-width: 800px) {
+  .HeroContainer::before {
+    background: url("../../images/logo-header-mobile.jpg") no-repeat bottom;
   }
 }
