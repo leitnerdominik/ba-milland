@@ -249,6 +249,7 @@ class NewEventForm extends Component {
             focusOut={event => this.focusOutHandler(event, formElement.id)}
           />
         ))}
+        <button type="submit" className={classes.SendData}>senden</button>
       </form>
     );
 
