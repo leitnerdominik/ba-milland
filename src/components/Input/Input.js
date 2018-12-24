@@ -65,6 +65,7 @@ const input = props => {
           onChange={props.changed}
           onSelect={props.changed}
           selected={props.value}
+          onBlur={props.focusOut}
         />
       );
       break;

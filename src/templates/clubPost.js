@@ -1,13 +1,12 @@
 import React from 'react';
 import { graphql } from 'gatsby';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 
 import Layout from '../components/Layout/Layout';
 
 import classes from './clubPost.module.css';
 
 export default ({ data }) => {
-  console.log(data);
   const post = data.markdownRemark.frontmatter;
   const html = data.markdownRemark.html;
 

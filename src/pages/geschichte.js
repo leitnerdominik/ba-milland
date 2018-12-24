@@ -19,7 +19,6 @@ const geschichte = ({ data }) => {
     
   });
 
-  console.log(images);
   return (
     <Layout>
       <div className={classes.Container}>

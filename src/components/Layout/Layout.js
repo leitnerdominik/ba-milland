@@ -3,7 +3,7 @@ import PropTypes from 'prop-types';
 import Helmet from 'react-helmet';
 import { StaticQuery, graphql } from 'gatsby';
 import { library } from '@fortawesome/fontawesome-svg-core';
-import { faEnvelope, faPhone, faGlobeAfrica } from '@fortawesome/free-solid-svg-icons';
+import { faEnvelope, faPhone, faGlobeAfrica, faAngleDown } from '@fortawesome/free-solid-svg-icons';
 
 import Toolbar from '../Navigation/Toolbar/Toolbar';
 import SideDrawer from '../Navigation/SideDrawer/SideDrawer';
@@ -11,7 +11,7 @@ import Footer from '../Footer/Footer';
 
 import './Layout.css';
 
-library.add(faEnvelope, faPhone, faGlobeAfrica);
+library.add(faEnvelope, faPhone, faGlobeAfrica, faAngleDown);
 
 class Layout extends Component {
   constructor(props) {

@@ -39,8 +39,7 @@ class PhotoGallery extends Component {
   render() {
     const { images, columns } = this.props;
     const { showLightbox, currentImage } = this.state;
-
-    console.log(this.state);
+    
     return (
       <Fragment>
         <div className={classes.Gallery}>
