@@ -34,7 +34,7 @@ export default IndexPage;
 
 export const query = graphql`
 query {
-  file(relativePath: { eq: "images/bildungsausschuss-logo-big.png" }) {
+  file(relativePath: { eq: "bildungsausschuss-logo-big.png" }) {
     childImageSharp {
       fluid(maxHeight: 250, maxWidth: 250) {
         ...GatsbyImageSharpFluid
@@ -43,3 +43,5 @@ query {
   }
 }
 `;
+
+
