@@ -27,3 +27,10 @@
 .SendData:focus {
   outline: none;
 }
+
+.SendData:disabled {
+  color: #333;
+  background-color: #ccc;
+  cursor: not-allowed;
+  border-color: gray;
+}

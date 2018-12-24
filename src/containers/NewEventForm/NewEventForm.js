@@ -186,8 +186,6 @@ class NewEventForm extends Component {
 
   inputChangedHandler = (event, formName) => {
 
-    console.log(event);
-
     const value = event.target ? event.target.value : event; // if it's not an input element, like date, select
     const updateFormElement = {
       ...this.state.form[formName],
@@ -202,6 +200,7 @@ class NewEventForm extends Component {
   };
 
   focusOutHandler = (event, formName) => {
+    
     const updateFormElement = {
       ...this.state.form[formName],
       touched: true,
@@ -211,12 +210,19 @@ class NewEventForm extends Component {
       )
     };
 
+    console.log("Valid: ", this.checkValidation(
+      event.target.value,
+      this.state.form[formName].validation
+    ))
+
     const updateForm = { ...this.state.form, [formName]: updateFormElement };
 
     let formIsValid = true;
     for (let key in updateForm) {
       formIsValid = updateForm[key].valid && formIsValid;
     }
+
+    console.log(formIsValid);
 
     this.setState({
       form: updateForm,
@@ -249,7 +255,7 @@ class NewEventForm extends Component {
             focusOut={event => this.focusOutHandler(event, formElement.id)}
           />
         ))}
-        <button type="submit" className={classes.SendData}>senden</button>
+        <button type="submit" disabled={!this.state.formIsValid} className={classes.SendData}>senden</button>
       </form>
     );
 
