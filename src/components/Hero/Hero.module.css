@@ -68,6 +68,9 @@
 
 .Logo {
   margin: 0;
+  height: 6vw;
+  width: 6vw;
+  display: inline-block;
 }
 
 .ContentContainer {
@@ -78,8 +81,36 @@
   font-weight: bold;
 }
 
-@media (max-width: 800px) {
+.ButtonDown {
+  border: none;
+  background-color: transparent;
+  animation-duration: 1s;
+  animation-name: buttonIconMove;
+  animation-iteration-count: infinite;
+}
+
+.ButtonDown:hover {
+  cursor: pointer;
+}
+
+.ButtonDown:focus {
+  outline: none;
+}
+
+@keyframes buttonIconMove {
+  0% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-10px);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+
+/* @media (max-width: 800px) {
   .HeroContainer::before {
     background: url("../../images/logo-header-mobile.jpg") no-repeat bottom;
   }
-}
+} */
