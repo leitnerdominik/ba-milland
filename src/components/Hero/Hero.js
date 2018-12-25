@@ -9,7 +9,7 @@ const hero = ({ scrollToContent }) => (
   <StaticQuery
     query={graphql`
       query {
-        file(relativePath: { eq: "education.jpg" }) {
+        file(relativePath: { eq: "bildungsausschuss-logo-big.png" }) {
           childImageSharp {
             fluid(maxHeight: 250, maxWidth: 250) {
               ...GatsbyImageSharpFluid

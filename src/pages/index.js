@@ -17,8 +17,6 @@ class IndexPage extends Component {
   };
 
   render() {
-    const logo = this.props.data.file.childImageSharp.fluid;
-    console.log(logo);
     return (
       <Layout>
         <Hero scrollToContent={this.scrollToContent} />
