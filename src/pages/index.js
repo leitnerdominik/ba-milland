@@ -1,5 +1,4 @@
 import React, { Component } from 'react';
-import { graphql } from 'gatsby';
 
 import Layout from '../components/Layout/Layout';
 import Hero from '../components/Hero/Hero';
@@ -19,9 +18,10 @@ class IndexPage extends Component {
 
   render() {
     const logo = this.props.data.file.childImageSharp.fluid;
+    console.log(logo);
     return (
       <Layout>
-        <Hero scrollToContent={this.scrollToContent} logo={logo} />
+        <Hero scrollToContent={this.scrollToContent} />
         <div ref={this.contentStart} className={classes.IndexContainer}>
           <EventsPreview />
         </div>
@@ -31,17 +31,5 @@ class IndexPage extends Component {
 }
 
 export default IndexPage;
-
-export const query = graphql`
-query {
-  file(relativePath: { eq: "bildungsausschuss-logo-big.png" }) {
-    childImageSharp {
-      fluid(maxHeight: 250, maxWidth: 250) {
-        ...GatsbyImageSharpFluid
-      }
-    }
-  }
-}
-`;
 
 
