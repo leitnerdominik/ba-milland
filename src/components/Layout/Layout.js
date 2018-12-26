@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import PropTypes from 'prop-types';
 import Helmet from 'react-helmet';
 import { StaticQuery, graphql } from 'gatsby';
-import { library } from '@fortawesome/fontawesome-svg-core';
+import { library, config } from '@fortawesome/fontawesome-svg-core';
 import { faEnvelope, faPhone, faGlobeAfrica, faAngleDown } from '@fortawesome/free-solid-svg-icons';
 
 import Toolbar from '../Navigation/Toolbar/Toolbar';
@@ -12,6 +12,8 @@ import Footer from '../Footer/Footer';
 import './Layout.css';
 
 library.add(faEnvelope, faPhone, faGlobeAfrica, faAngleDown);
+
+config.autoAddCss = false;
 
 class Layout extends Component {
   constructor(props) {
