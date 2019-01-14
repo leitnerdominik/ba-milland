@@ -5,7 +5,7 @@ import { graphql } from 'gatsby';
 import Layout from '../components/Layout/Layout';
 import PhotoGallery from '../components/PhotoGallery/PhotoGallery';
 
-import classes from './geschichte.module.css';
+import classes from '../styles/pages/geschichte/geschichte.module.css';
 
 const geschichte = ({ data }) => {
   const img = data.allFile.edges;

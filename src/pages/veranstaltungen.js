@@ -6,7 +6,7 @@ import Layout from '../components/Layout/Layout';
 import Event from '../components/EventsPreview/Event/Event';
 import DateFilter from '../components/DateFilter/DateFilter';
 
-import classes from './veranstaltungen.module.css';
+import classes from '../styles/pages/veranstaltungen/veranstaltungen.module.css';
 
 class Veranstaltungen extends Component {
   constructor(props) {

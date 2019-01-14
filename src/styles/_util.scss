@@ -1,0 +1,10 @@
+$black: #000;
+$white: #fff;
+$primary-background:#f3f3f3; 
+$primary-green: #02b839;
+$secondary-green: #027c26;
+
+@mixin center-content {
+  width: 80%;
+  margin: 0 auto;
+}

@@ -3,7 +3,7 @@ import React, { Component } from 'react';
 import Layout from '../components/Layout/Layout';
 import ClubPreview from '../components/ClubPreview/ClubPreview';
 
-import classes from './previewclubs.module.css';
+import classes from '../styles/pages/previewclubs/previewclubs.module.css';
 import { graphql } from 'gatsby';
 
 class Clubs extends Component {

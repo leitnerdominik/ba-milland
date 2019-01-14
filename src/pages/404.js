@@ -1,7 +1,7 @@
 import React from 'react';
 import Layout from '../components/Layout/Layout';
 
-import classes from './404.module.css';
+import classes from '../styles/pages/404/404.module.css';
 
 const NotFoundPage = () => (
   <Layout>

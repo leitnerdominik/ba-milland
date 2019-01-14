@@ -1,0 +1,6 @@
+@import '../../util';
+
+.ContactContainer {
+  @include center-content;
+  padding: 32px;
+}

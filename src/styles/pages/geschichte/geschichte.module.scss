@@ -1,0 +1,9 @@
+@import '../../_util.scss';
+
+.Container {
+  @include center-content;
+}
+
+.Content {
+  padding: 16px 0;
+}

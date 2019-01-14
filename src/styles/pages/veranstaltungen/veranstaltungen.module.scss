@@ -1,0 +1,29 @@
+@import '../../_util.scss';
+
+.Container {
+  width: 80%;
+  margin: 0 auto;
+}
+
+.DateContainer {
+  margin-bottom: 20px;
+  margin-top: 90px;
+
+  > span {
+    font-size: 26px;
+    font-weight: bold;
+  }
+}
+
+.NewEvent {
+  display: inline-block;
+  text-decoration: none;
+  color: $primary-green;
+  font-size: 28px;
+  font-weight: bold;
+  margin-bottom: 32px;
+
+  &:hover {
+    text-decoration: underline;
+  }
+}

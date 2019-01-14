@@ -1,0 +1,10 @@
+{
+    "version": 3,
+    "mappings": "AAEA,AAAA,iBAAiB,CAAC;ECKhB,KAAK,EAAE,GAAG;EACV,MAAM,EAAE,MAAM;EDJd,OAAO,EAAE,IAAI;CACd",
+    "sources": [
+        "kontakt.module.scss",
+        "../../_util.scss"
+    ],
+    "names": [],
+    "file": "kontakt.module.css"
+}

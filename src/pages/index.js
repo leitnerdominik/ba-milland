@@ -4,12 +4,12 @@ import Layout from '../components/Layout/Layout';
 import Hero from '../components/Hero/Hero';
 import EventsPreview from '../components/EventsPreview/EventsPreview';
 
-import classes from './index.module.css';
+import classes from '../styles/pages/index/index.module.css';
 
 class IndexPage extends Component {
   contentStart = React.createRef();
 
-  scrollToContent = e => {
+  scrollToContent = () => {
     this.contentStart.current.scrollIntoView({
       block: 'start',
       behavior: 'smooth',
@@ -29,5 +29,3 @@ class IndexPage extends Component {
 }
 
 export default IndexPage;
-
-

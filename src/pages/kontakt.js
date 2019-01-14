@@ -2,7 +2,7 @@ import React from 'react';
 
 import Layout from '../components/Layout/Layout';
 
-import classes from './kontakt.module.css';
+import classes from '../styles/pages/kontakt/kontakt.module.css';
 
 const contact = () => (
   <Layout>

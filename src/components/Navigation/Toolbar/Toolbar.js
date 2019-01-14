@@ -4,7 +4,7 @@ import { Link } from 'gatsby';
 import NavigationItems from '../NavigationItems/NavigationItems';
 import Logo from '../../Logo/Logo';
 import DrawerToggle from '../DrawerToggle/DrawerToggle';
-
+ 
 import classes from './Toolbar.module.css';
 
 const toolbar = ({siteTitle, drawerClicked, sideDrawerOpen}) => (
