@@ -101,9 +101,3 @@
     transform: translateY(0);
   }
 }
-
-/* @media (max-width: 800px) {
-  .HeroContainer::before {
-    background: url("../../images/logo-header-mobile.jpg") no-repeat bottom;
-  }
-} */
