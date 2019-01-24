@@ -3,10 +3,12 @@
   max-width: 500px;
   margin: 20px auto;
   margin-top: 90px;
-  box-shadow: 0 2px 3px #ccc;
+  -webkit-box-shadow: 0 2px 3px #ccc;
+          box-shadow: 0 2px 3px #ccc;
   border: 1px solid #eee;
   padding: 40px;
-  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
 }
 
 .SendData {
@@ -30,7 +32,8 @@
 
 .SendData:disabled {
   color: #333;
-  background-color: #ccc;
+  background-color: white;
   cursor: not-allowed;
   border-color: gray;
 }
+/*# sourceMappingURL=NewEventForm.module.css.map */

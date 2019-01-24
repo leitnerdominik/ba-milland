@@ -12,9 +12,9 @@ const drawerToggle = ({ clicked, sideDrawerOpen }) => {
   return (
     <div className={classes.DrawerToggleContainer}>
       <button type="submit" onClick={clicked} className={hamburgerMenu}>
-        <div />
-        <div />
-        <div />
+        <div className={classes.Line}/>
+        <div className={classes.Line}/>
+        <div className={classes.Line}/>
       </button>
     </div>
   );

@@ -3,7 +3,7 @@
     "mappings": "AAEA,AAAA,eAAe,CAAC;EACd,OAAO,EAAE,MAAM;EACf,OAAO,EAAE,IAAI;EACb,cAAc,EAAE,GAAG;EACnB,SAAS,EAAE,IAAI;EACf,eAAe,EAAE,YAAY;EAC7B,gBAAgB,EAAE,OAAO;CAC1B",
     "sources": [
         "previewclubs.module.scss",
-        "../../_colors.scss"
+        "../../_util.scss"
     ],
     "names": [],
     "file": "previewclubs.module.css"

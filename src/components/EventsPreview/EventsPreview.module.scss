@@ -1,10 +1,11 @@
+@import '../../styles/util';
+
 .Title {
   text-align: center;
-  color: #02b839;
+  color: $primary-green;
   margin: 32px;
 }
 
 .InfoText {
   text-align: center;
 }
-/*# sourceMappingURL=EventsPreview.module.css.map */

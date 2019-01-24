@@ -1,9 +1,10 @@
+@import '../../styles/util';
+
 .LinkContainer {
   display: inline-block;
 }
 
 .Link {
   text-decoration: none;
-  color: #02b839;
+  color: $primary-green;
 }
-/*# sourceMappingURL=HyperLink.module.css.map */

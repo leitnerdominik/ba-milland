@@ -7,10 +7,10 @@
 
 .outer-container {
   position: relative;
-  min-height: 100%
+  min-height: 100%;
 }
 
-html, body  {
+html, body {
   height: 100vh;
   min-height: 100vh;
   padding: 0;
@@ -25,8 +25,9 @@ html, body  {
   height: 100%;
 }
 
-@media(min-width: 900px) {
+@media (min-width: 900px) {
   .body-content {
     margin-top: 71px;
   }
 }
+/*# sourceMappingURL=Layout.module.css.map */

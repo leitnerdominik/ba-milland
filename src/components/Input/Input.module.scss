@@ -1,7 +1,6 @@
 .InputContainer {
   width: 100%;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+  box-sizing: border-box;
   margin-bottom: 25px;
 }
 
@@ -27,6 +26,5 @@
 
 .Invalid {
   border: 2px solid red;
-  background-color: rgba(203, 29, 29, 0.3);
+  background-color: rgba( 203, 29, 29, 0.3 );
 }
-/*# sourceMappingURL=Input.module.css.map */

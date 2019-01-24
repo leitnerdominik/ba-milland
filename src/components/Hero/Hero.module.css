@@ -1,18 +1,27 @@
 .HeroContainer {
-  align-items: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
   font-size: 18px;
   height: 100vh;
-  justify-content: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   position: relative;
   overflow: hidden;
   text-align: center;
-  transform-style: preserve-3d;
-  perspective: 100px;
+  -webkit-transform-style: preserve-3d;
+          transform-style: preserve-3d;
+  -webkit-perspective: 100px;
+          perspective: 100px;
 }
 
 .HeroContainer::before {
-  animation: fade-slide-down 2s 0.5s cubic-bezier(0, 0.5, 0, 1) forwards;
+  -webkit-animation: fade-slide-down 2s 0.5s cubic-bezier(0, 0.5, 0, 1) forwards;
+          animation: fade-slide-down 2s 0.5s cubic-bezier(0, 0.5, 0, 1) forwards;
   background: url("../../images/logo-header.jpg") no-repeat bottom;
   background-size: cover;
   content: "";
@@ -26,38 +35,76 @@
 }
 
 .HeroContainer::after {
-  animation: rotate-up 0.5s 0.5s cubic-bezier(0, 0.5, 0, 1) forwards;
+  -webkit-animation: rotate-up 0.5s 0.5s cubic-bezier(0, 0.5, 0, 1) forwards;
+          animation: rotate-up 0.5s 0.5s cubic-bezier(0, 0.5, 0, 1) forwards;
   content: "";
+}
+
+@-webkit-keyframes fade-slide-down {
+  0% {
+    opacity: 0;
+    -webkit-transform: translateY(-4rem);
+            transform: translateY(-4rem);
+  }
+  100% {
+    opacity: 1;
+    -webkit-transform: none;
+            transform: none;
+  }
 }
 
 @keyframes fade-slide-down {
   0% {
     opacity: 0;
-    transform: translateY(-4rem);
+    -webkit-transform: translateY(-4rem);
+            transform: translateY(-4rem);
   }
   100% {
     opacity: 1;
-    transform: none;
+    -webkit-transform: none;
+            transform: none;
+  }
+}
+
+@-webkit-keyframes pop-in {
+  0% {
+    opacity: 0;
+    -webkit-transform: translateY(-4rem) scale(0.8);
+            transform: translateY(-4rem) scale(0.8);
+  }
+  100% {
+    opacity: 1;
+    -webkit-transform: none;
+            transform: none;
   }
 }
 
 @keyframes pop-in {
   0% {
     opacity: 0;
-    transform: translateY(-4rem) scale(0.8);
+    -webkit-transform: translateY(-4rem) scale(0.8);
+            transform: translateY(-4rem) scale(0.8);
   }
   100% {
     opacity: 1;
-    transform: none;
+    -webkit-transform: none;
+            transform: none;
+  }
+}
+
+@-webkit-keyframes rotate-up {
+  100% {
+    -webkit-transform: rotateZ(-4deg);
+            transform: rotateZ(-4deg);
   }
 }
 
 @keyframes rotate-up {
   100% {
-    transform: rotateZ(-4deg);
+    -webkit-transform: rotateZ(-4deg);
+            transform: rotateZ(-4deg);
   }
 }
-
 
 .Logo {
   margin: 0;
@@ -77,9 +124,12 @@
 .ButtonDown {
   border: none;
   background-color: transparent;
-  animation-duration: 1s;
-  animation-name: buttonIconMove;
-  animation-iteration-count: infinite;
+  -webkit-animation-duration: 1s;
+          animation-duration: 1s;
+  -webkit-animation-name: buttonIconMove;
+          animation-name: buttonIconMove;
+  -webkit-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
 }
 
 .ButtonDown:hover {
@@ -90,20 +140,33 @@
   outline: none;
 }
 
-@keyframes buttonIconMove {
+@-webkit-keyframes buttonIconMove {
   0% {
-    transform: translateY(0);
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
   }
   50% {
-    transform: translateY(-10px);
+    -webkit-transform: translateY(-10px);
+            transform: translateY(-10px);
   }
   100% {
-    transform: translateY(0);
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
   }
 }
 
-/* @media (max-width: 800px) {
-  .HeroContainer::before {
-    background: url("../../images/logo-header-mobile.jpg") no-repeat bottom;
+@keyframes buttonIconMove {
+  0% {
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
   }
-} */
+  50% {
+    -webkit-transform: translateY(-10px);
+            transform: translateY(-10px);
+  }
+  100% {
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+  }
+}
+/*# sourceMappingURL=Hero.module.css.map */

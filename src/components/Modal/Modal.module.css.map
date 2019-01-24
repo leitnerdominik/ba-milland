@@ -1,0 +1,9 @@
+{
+    "version": 3,
+    "mappings": "AAAA,AAAA,eAAe,CAAC;EACd,QAAQ,EAAE,KAAK;EACf,gBAAgB,EAAE,WAAW;EAC7B,IAAI,EAAE,CAAC;EACP,GAAG,EAAE,GAAG;EACR,KAAK,EAAE,IAAI;EACX,UAAU,EAAE,gBAAgB;EAC5B,OAAO,EAAE,GAAG;CACb;;AAED,AAAA,MAAM,CAAC;EACL,OAAO,EAAE,IAAI;EACb,gBAAgB,EAAE,KAAK;EACvB,MAAM,EAAE,MAAM;EACd,SAAS,EAAE,KAAK;CAEjB",
+    "sources": [
+        "Modal.module.scss"
+    ],
+    "names": [],
+    "file": "Modal.module.css"
+}

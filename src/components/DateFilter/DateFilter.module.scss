@@ -9,16 +9,15 @@
   border: 1px solid black;
   border-radius: 4px;
   font-size: 18px;
+
+  &:focus {
+    outline: none;
+  }
 }
 
-.Datepicker:focus {
-  outline: none;
-}
-
-@media (max-width: 700px) {
+@media(max-width: 700px) {
   .Container {
     display: block;
     margin: 0;
   }
 }
-/*# sourceMappingURL=DateFilter.module.css.map */

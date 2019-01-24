@@ -1,25 +1,28 @@
+@import '../../../styles/util';
+
 .EventContainer {
   position: relative;
   margin: 10px auto;
   text-align: justify;
   border-bottom: 1px solid rgba(0, 0, 0, 0.4);
   padding: 16px 0;
-}
 
-.EventContainer h3, .EventContainer h5 {
-  display: inline-block;
+  h3, h5 {
+    display: inline-block;
+  }
 }
 
 .EventLink {
   text-decoration: none;
-}
 
-.EventLink h3 {
-  color: #02b839;
-}
 
-.EventLink h3:hover {
-  text-decoration: underline;
+  h3 {
+    color: $primary-green;
+
+    &:hover {
+      text-decoration: underline;
+    }
+  }
 }
 
 .EventDate {
@@ -32,4 +35,3 @@
 .TimeContainer {
   margin: 0;
 }
-/*# sourceMappingURL=Event.module.css.map */

@@ -3,7 +3,7 @@
     "mappings": "AAEA,AAAA,UAAU,CAAC;ECKT,KAAK,EAAE,GAAG;EACV,MAAM,EAAE,MAAM;CDJf;;AAED,AAAA,QAAQ,CAAC;EACP,OAAO,EAAE,MAAM;CAChB",
     "sources": [
         "geschichte.module.scss",
-        "../../_colors.scss"
+        "../../_util.scss"
     ],
     "names": [],
     "file": "geschichte.module.css"

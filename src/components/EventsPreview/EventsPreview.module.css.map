@@ -1,0 +1,10 @@
+{
+    "version": 3,
+    "mappings": "AAEA,AAAA,MAAM,CAAC;EACL,UAAU,EAAE,MAAM;EAClB,KAAK,ECDS,OAAO;EDErB,MAAM,EAAE,IAAI;CACb;;AAED,AAAA,SAAS,CAAC;EACR,UAAU,EAAE,MAAM;CACnB",
+    "sources": [
+        "EventsPreview.module.scss",
+        "../../styles/_util.scss"
+    ],
+    "names": [],
+    "file": "EventsPreview.module.css"
+}
