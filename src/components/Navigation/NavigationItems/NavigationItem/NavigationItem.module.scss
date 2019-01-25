@@ -1,8 +1,9 @@
+@import "../../../../styles/util";
+
 .Link {
   text-decoration: none;
   color: black;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+  box-sizing: border-box;
   display: block;
   height: 100%;
   padding: 12px;
@@ -12,7 +13,7 @@
   color: white;
   border-radius: 6px;
   font-weight: bold;
-  background: #02b839;
+  background: $primary-green;
 }
 
 @media (min-width: 1050px) {
@@ -23,8 +24,7 @@
     border-radius: 0px;
   }
   .ActiveLink {
-    border-bottom: 2px solid #149a3c;
-    color: #149a3c;
+    border-bottom: 2px solid $secondary-green;
+    color: $secondary-green;
   }
 }
-/*# sourceMappingURL=NavigationItem.module.css.map */

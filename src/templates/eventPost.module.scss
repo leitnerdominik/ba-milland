@@ -1,0 +1,17 @@
+@import '../styles/util';
+
+.EventContainer {
+  width: 80%;
+  margin: 0 auto;
+  padding: 32px;
+
+  h1 {
+    color: $primary-green;
+  }
+}
+
+@media(max-width: 500px) {
+  .EventContainer {
+    width: 100%;
+  }
+}
