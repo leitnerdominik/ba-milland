@@ -1,0 +1,24 @@
+@import '../../styles/util';
+
+.Container {
+  margin: 100px 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  flex-direction: row;
+
+  h2 {
+    text-align: center;
+    color: $secondary-green;
+    font-size: 25px;
+  }
+
+  div {
+    padding: 20px;
+    text-align: justify; 
+    width: 50%;
+    min-width: 350px;
+    height: 300px;
+  }
+}
