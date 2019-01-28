@@ -9,7 +9,7 @@ import Toolbar from '../Navigation/Toolbar/Toolbar';
 import SideDrawer from '../Navigation/SideDrawer/SideDrawer';
 import Footer from '../Footer/Footer';
 
-import './Layout.module.css';
+import './Layout.css';
 
 library.add(faEnvelope, faPhone, faGlobeAfrica, faAngleDown);
 
