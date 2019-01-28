@@ -4,27 +4,31 @@ backend:
 
 media_folder: static/assets
 public_folder: assets
+slug:
+  encoding: 'ascii'
+  clean_accents: true
 
 collections:
   - name: event
     label: event
     folder: src/markdown/events
     create: true
-    slug: "{{day}}-{{month}}-{{year}}_{{slug}}"
+    slug: '{{day}}-{{month}}-{{year}}_{{slug}}'
+
     fields:
       - {
           name: date_from,
           label: Datum von,
           widget: date,
-          format: "DD.MM.YYYY",
+          format: 'DD.MM.YYYY',
         }
       - {
           name: date_until,
           label: Datum bis (Optional),
           widget: date,
-          format: "DD.MM.YYYY",
+          format: 'DD.MM.YYYY',
           required: false,
-          default: "",
+          default: '',
         }
       - {
           name: time_from,
@@ -47,9 +51,9 @@ collections:
       - {
           name: section,
           label: Section,
-          default: "event",
+          default: 'event',
           widget: select,
-          options: ["event"],
+          options: ['event'],
         }
       - {
           name: club,
@@ -57,20 +61,20 @@ collections:
           widget: select,
           options:
             [
-              "Bildungsausschuss",
-              "Chronik",
-              "Frauenbewegung",
-              "Frauenchor",
-              "Freiwillige Feuerwehr",
-              "Kigo",
-              "Krippenfreunde",
-              "KVW",
-              "Mize",
-              "Musikkapelle",
-              "Seniorenklub",
-              "SVP",
-              "Vereinsgemeinschaft",
-              "Volkstanzgruppe",
+              'Bildungsausschuss',
+              'Chronik',
+              'Frauenbewegung',
+              'Frauenchor',
+              'Freiwillige Feuerwehr',
+              'Kigo',
+              'Krippenfreunde',
+              'KVW',
+              'Mize',
+              'Musikkapelle',
+              'Seniorenklub',
+              'SVP',
+              'Vereinsgemeinschaft',
+              'Volkstanzgruppe',
             ],
         }
       - { name: title, label: Title }
