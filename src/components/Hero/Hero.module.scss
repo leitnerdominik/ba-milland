@@ -2,7 +2,7 @@
   align-items: center;
   display: flex;
   font-size: 18px;
-  height: 100vh;
+  height: 560px;
   justify-content: center;
   position: relative;
   overflow: hidden;
@@ -62,43 +62,15 @@
 
 .Logo {
   margin: 0;
-  height: 6vw;
-  width: 6vw;
+  height: calc(25px + 3vw);
+  width: calc(25px + 3vw);
   display: inline-block;
 }
 
 .ContentContainer {
-  font-size: 6vw;
+  font-size: calc(25px + 4vw);
 }
 
 .LogoContainer {
   font-weight: bold;
-}
-
-.ButtonDown {
-  border: none;
-  background-color: transparent;
-  animation-duration: 1s;
-  animation-name: buttonIconMove;
-  animation-iteration-count: infinite;
-
-  &:hover {
-    cursor: pointer;
-  }
-
-  &:focus {
-    outline: none;
-  }
-}
-
-@keyframes buttonIconMove {
-  0% {
-    transform: translateY(0);
-  }
-  50% {
-    transform: translateY(-10px);
-  }
-  100% {
-    transform: translateY(0);
-  }
 }

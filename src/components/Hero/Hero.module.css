@@ -6,7 +6,7 @@
   display: -ms-flexbox;
   display: flex;
   font-size: 18px;
-  height: 100vh;
+  height: 560px;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
@@ -108,65 +108,16 @@
 
 .Logo {
   margin: 0;
-  height: 6vw;
-  width: 6vw;
+  height: calc(25px + 3vw);
+  width: calc(25px + 3vw);
   display: inline-block;
 }
 
 .ContentContainer {
-  font-size: 6vw;
+  font-size: calc(25px + 4vw);
 }
 
 .LogoContainer {
   font-weight: bold;
-}
-
-.ButtonDown {
-  border: none;
-  background-color: transparent;
-  -webkit-animation-duration: 1s;
-          animation-duration: 1s;
-  -webkit-animation-name: buttonIconMove;
-          animation-name: buttonIconMove;
-  -webkit-animation-iteration-count: infinite;
-          animation-iteration-count: infinite;
-}
-
-.ButtonDown:hover {
-  cursor: pointer;
-}
-
-.ButtonDown:focus {
-  outline: none;
-}
-
-@-webkit-keyframes buttonIconMove {
-  0% {
-    -webkit-transform: translateY(0);
-            transform: translateY(0);
-  }
-  50% {
-    -webkit-transform: translateY(-10px);
-            transform: translateY(-10px);
-  }
-  100% {
-    -webkit-transform: translateY(0);
-            transform: translateY(0);
-  }
-}
-
-@keyframes buttonIconMove {
-  0% {
-    -webkit-transform: translateY(0);
-            transform: translateY(0);
-  }
-  50% {
-    -webkit-transform: translateY(-10px);
-            transform: translateY(-10px);
-  }
-  100% {
-    -webkit-transform: translateY(0);
-            transform: translateY(0);
-  }
 }
 /*# sourceMappingURL=Hero.module.css.map */

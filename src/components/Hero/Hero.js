@@ -29,9 +29,6 @@ const hero = ({ scrollToContent }) => (
           <div>
             <span>Milland</span>
           </div>
-          <button className={classes.ButtonDown} onClick={scrollToContent}>
-            <FontAwesomeIcon icon="angle-down" />
-          </button>
         </section>
       </header>
     )}

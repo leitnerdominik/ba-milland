@@ -93,8 +93,8 @@ class Veranstaltungen extends Component {
               placeholder="DD.MM.YYYY"
               description="bis"
             />
-          </div>
           <Link className={classes.NewEvent} to="/new_event">Neue Veranstaltung</Link>
+          </div>
           {content}
         </div>
       </Layout>
