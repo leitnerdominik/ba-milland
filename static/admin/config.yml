@@ -28,7 +28,7 @@ collections:
           widget: date,
           format: 'DD.MM.YYYY',
           required: false,
-          default: ''
+          default: ' '
         }
       - {
           name: time_from,
@@ -41,7 +41,7 @@ collections:
           label: Zeit bis (Optional),
           widget: string,
           required: false,
-        }
+        } 
       - {
           name: place,
           label: Veranstaltungsort (Optional),
@@ -52,7 +52,7 @@ collections:
           name: section,
           label: Section,
           default: 'event',
-          widget: select,
+          widget: hidden,
           options: ['event'],
         }
       - {
