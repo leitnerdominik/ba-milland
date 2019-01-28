@@ -7,6 +7,7 @@ const event = ({ title, date_from, date_until, time_from, time_until, content, p
   const renderContent = content ? <p>{content}</p> : null;
 
   let renderTime = null;
+  console.log(time_until);
   if(time_from && time_until) {
     renderTime = <p className={classes.TimeContainer}><b>Zeit: </b> {time_from} - {time_until}</p>
   } else if(time_from) {
