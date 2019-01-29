@@ -2,19 +2,23 @@
 
 .EventContainer {
   position: relative;
-  margin: 10px auto;
   text-align: justify;
-  border-bottom: 1px solid rgba(0, 0, 0, 0.4);
-  padding: 16px 0;
-
-  h3, h5 {
-    display: inline-block;
+  margin: 20px auto;
+  padding: 16px;
+  width: 45%;
+  min-width: 300px;
+  height: 200px;
+  box-shadow: 0px 1px 3px 0px rgba(0, 0, 0, 0.2),
+    0px 1px 1px 0px rgba(0, 0, 0, 0.14), 0px 2px 1px -1px rgba(0, 0, 0, 0.12);
+  h3,
+  h5 {
+    margin: 10px 0;
+    padding: 0;
   }
 }
 
 .EventLink {
   text-decoration: none;
-
 
   h3 {
     color: $primary-green;
@@ -25,11 +29,32 @@
   }
 }
 
-.EventDate {
+.Club {
   position: absolute;
-  color: #999;
   top: 0;
   right: 0;
+  // background: #00a8ff;
+  padding: 6px 12px;
+  padding-left: 40px;
+  color: white;
+  height: 42px;
+
+  &::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 0;
+    height: 0;
+    border-left: 13px solid white;
+    border-top: 21px solid transparent;
+    border-bottom: 21px solid transparent;
+  }
+}
+
+.EventDate {
+  display: block;
+  color: #999;
 }
 
 .TimeContainer {
