@@ -3,4 +3,10 @@
   margin: 0 auto;
   padding: 32px;
 }
+
+@media (max-width: 1000px) {
+  .ContactContainer {
+    width: 95%;
+  }
+}
 /*# sourceMappingURL=kontakt.module.css.map */

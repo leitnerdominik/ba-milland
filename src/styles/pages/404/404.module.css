@@ -3,4 +3,10 @@
   margin: 0 auto;
   padding: 32px;
 }
+
+@media (max-width: 1000px) {
+  .NotFoundContainer {
+    width: 95%;
+  }
+}
 /*# sourceMappingURL=404.module.css.map */

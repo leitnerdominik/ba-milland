@@ -16,6 +16,12 @@
   }
 }
 
+.EventsContainer {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+}
+
 .NewEvent {
   display: inline-block;
   text-decoration: none;

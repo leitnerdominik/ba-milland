@@ -1,10 +1,14 @@
 $black: #000;
 $white: #fff;
-$primary-background:#f3f3f3; 
+$primary-background: #f3f3f3;
 $primary-green: #02b839;
 $secondary-green: #149a3c;
 
 @mixin center-content {
   width: 80%;
   margin: 0 auto;
+
+  @media (max-width: 1000px) {
+    width: 95%;
+  }
 }
