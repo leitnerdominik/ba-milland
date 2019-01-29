@@ -5,6 +5,7 @@ import moment from 'moment';
 import Layout from '../components/Layout/Layout';
 import Event from '../components/EventsPreview/Event/Event';
 import DateFilter from '../components/DateFilter/DateFilter';
+import mapClubToColor from '../utils/badget-color';
 
 import classes from '../styles/pages/veranstaltungen/veranstaltungen.module.css';
 
@@ -27,6 +28,7 @@ class Veranstaltungen extends Component {
     const events = this.props.data.allMarkdownRemark.edges.map(({ node }) => {
 
       const metaData  = node.frontmatter;
+      const badget = mapClubToColor(metaData.club.toString().toLowerCase());
       return (
         <Event
           key={node.id}
@@ -35,6 +37,8 @@ class Veranstaltungen extends Component {
           date_until={metaData.date_until}
           time_from={metaData.time_from}
           time_until={metaData.time_until}
+          club={metaData.club}
+          badgetColor={badget}
           content={node.excerpt}
           path={node.fields.slug}
         />
@@ -56,7 +60,7 @@ class Veranstaltungen extends Component {
     const { events, startDate, endDate } = this.state;
     const filteredEvents = events.filter(event => {
       if(startDate !== null && endDate !== null) {
-        const pubDate = moment(event.props.date, "DD.MM.YYYY").toDate();
+        const pubDate = moment(event.props.date_from, "DD.MM.YYYY").toDate();
         return pubDate >= startDate && pubDate <= endDate;
       }
       return true;
@@ -95,7 +99,9 @@ class Veranstaltungen extends Component {
             />
           <Link className={classes.NewEvent} to="/new_event">Neue Veranstaltung</Link>
           </div>
-          {content}
+          <div className={classes.EventsContainer}>
+            {content}
+          </div>
         </div>
       </Layout>
     );
@@ -116,6 +122,7 @@ query {
           date_until
           time_from
           time_until
+          club
         }
         fields {
           slug
