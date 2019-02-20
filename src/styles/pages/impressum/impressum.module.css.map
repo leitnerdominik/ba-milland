@@ -1,0 +1,10 @@
+{
+    "version": 3,
+    "mappings": "AAEA,AAAA,UAAU,CAAC;ECKT,KAAK,EAAE,GAAG;EACV,MAAM,EAAE,MAAM;CDJf;;ACMC,MAAM,EAAE,SAAS,EAAE,MAAM;EDR3B,AAAA,UAAU,CAAC;ICSP,KAAK,EAAE,GAAG;GDPb",
+    "sources": [
+        "impressum.module.scss",
+        "../../_util.scss"
+    ],
+    "names": [],
+    "file": "impressum.module.css"
+}

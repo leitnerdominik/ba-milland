@@ -1,0 +1,11 @@
+.Impressum {
+  width: 80%;
+  margin: 0 auto;
+}
+
+@media (max-width: 1000px) {
+  .Impressum {
+    width: 95%;
+  }
+}
+/*# sourceMappingURL=impressum.module.css.map */
