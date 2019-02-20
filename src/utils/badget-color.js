@@ -1,5 +1,5 @@
 const CLUBS = {
-  bildungsausschuss: '#02b839',
+  bildungsausschuss: '#66F200',
   chronik: '#00a8ff',
   frauenbewegung: '#0097e6',
   frauenchor: '#8c7ae6',
