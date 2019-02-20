@@ -28,7 +28,7 @@ collections:
           widget: date,
           format: 'DD.MM.YYYY',
           required: false,
-          default: ' '
+          default: ''
         }
       - {
           name: time_from,

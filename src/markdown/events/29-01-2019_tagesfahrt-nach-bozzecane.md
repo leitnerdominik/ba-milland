@@ -1,6 +1,6 @@
 ---
 date_from: 07.03.2019
-date_until: ' '
+date_until: ''
 time_from: '8:00'
 section: event
 club: Seniorenklub
