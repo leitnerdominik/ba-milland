@@ -45,7 +45,6 @@ const events = () => (
 
       const events = postsOlderThanToday.map(({ node }) => {
         const badget = mapClubToColor(node.frontmatter.club.toString().toLowerCase());
-        console.log(badget, node.frontmatter.club);
         return (
           <Event
             key={node.id}
