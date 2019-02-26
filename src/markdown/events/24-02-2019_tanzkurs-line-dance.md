@@ -14,6 +14,6 @@ Line Dance wird ohne Partner in Reihen und Linien vor- und nebeneinander getanzt
 
 Es wird zu fast jeder Musik getanzt, vorwiegend Country und Pop. Für jedes Alter.
 
-Referentin: Emmi Kerschbaumer, zerti zierte Tanzleiterin
+Referentin: Emmi Kerschbaumer, zertifizierte Tanzleiterin
 
 Kursgebühr: 15 €, Anmeldung unter 329 4594 749 (ab 18 Uhr)
