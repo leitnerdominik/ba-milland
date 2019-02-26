@@ -3,8 +3,8 @@ section: club
 bannerImg: ../../images/clubs/cover_fc.jpg
 avatarImg: ../../images/clubs/chairman_nopic.jpg
 title: "Frauenchor Milland"
-name: "Anna Oberrauch"
-tel: "320 6070466"
+name: "Monika Leitner"
+email: "mm.leitner58@gmail.com"
 ---
 
 Ab dem Jahr 1972 trafen sich Sangesfreudige im Jugendheim von Milland zu wöchentlichen Singstunden,  bei denen vor allem Lieder aus dem Gotteslob eingelernt wurden.
