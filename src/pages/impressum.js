@@ -18,7 +18,7 @@ const impressum = () => {
           <li>Vereine Millands</li>
           <li>Bildungsausschuss Milland</li>
           <li>
-            <a href="https://sentres.com" target="_blank">
+            <a href="https://sentres.com" target="_blank" rel="noopener noreferrer">
               sentres.com
             </a>
           </li>
