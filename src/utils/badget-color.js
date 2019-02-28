@@ -6,7 +6,7 @@ const CLUBS = {
   'freiwillige feuerwehr': '#c23616',
   kigo: '#fbc531',
   krippenfreunde: '#e1b12c ',
-  kVW: '#4cd137',
+  kvw: '#4cd137',
   mize: '#44bd32',
   musikkapelle: '#487eb0',
   seniorenklub: '#40739e',
