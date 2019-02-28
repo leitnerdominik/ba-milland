@@ -1,7 +1,6 @@
 import React from "react";
 import Img from "gatsby-image";
 import { StaticQuery, graphql } from "gatsby";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
 import classes from "./Hero.module.css";
 import '../../../node_modules/@fortawesome/fontawesome-svg-core/styles.css';
