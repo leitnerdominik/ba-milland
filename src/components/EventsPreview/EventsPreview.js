@@ -43,8 +43,16 @@ const events = () => (
         }
       );
 
-      const events = postsOlderThanToday.map(({ node }) => {
-        const badget = mapClubToColor(node.frontmatter.club.toString().toLowerCase());
+      const sortEvents = postsOlderThanToday.sort((nodeA, nodeB) => {
+        const d1 = moment(nodeA.node.frontmatter.date_from, 'DD.MM.YYYY');
+        const d2 = moment(nodeB.node.frontmatter.date_from, 'DD.MM.YYYY');
+        return moment.utc(d1).diff(moment.utc(d2));
+      });
+
+      const events = sortEvents.map(({ node }) => {
+        const badget = mapClubToColor(
+          node.frontmatter.club.toString().toLowerCase()
+        );
         return (
           <Event
             key={node.id}
