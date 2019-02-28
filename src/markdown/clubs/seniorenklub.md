@@ -20,8 +20,7 @@ Entwicklung: Es ist überliefert, dass sich ab dem Jahre 1987/88 einige Senioren
 
 #### Der Ausschuss:
 * Mitterer Richard, Vorsitzender
-* Pflanzer Rosa, Stellvertreterin
+* Taschler-Frener Katharina
+* Pflanzer Rosa
 * Campidell Heinrich
 * Sader Balbina
-* Taschler Kathi
-* Willimek Johanna
