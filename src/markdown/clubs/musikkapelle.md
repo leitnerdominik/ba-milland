@@ -3,9 +3,9 @@ section: club
 bannerImg: ../../images/clubs/cover_mk.jpg
 avatarImg: ../../images/clubs/chairman_mk.jpg
 title: "Musikkapelle Milland"
-name: "Arno Pider"
+name: "Renè Bernarello"
 email: "info@mkmilland.com"
-tel: "328 9719735"
+tel: "366 4777753"
 website: "mkmilland.com"
 ---
 
