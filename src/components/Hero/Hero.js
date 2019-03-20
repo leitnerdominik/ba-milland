@@ -5,7 +5,7 @@ import { StaticQuery, graphql } from "gatsby";
 import classes from "./Hero.module.css";
 import '../../../node_modules/@fortawesome/fontawesome-svg-core/styles.css';
 
-const hero = ({ scrollToContent }) => (
+const hero = () => (
   <StaticQuery
     query={graphql`
       query {
