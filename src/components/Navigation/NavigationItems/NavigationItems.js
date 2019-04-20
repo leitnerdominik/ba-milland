@@ -12,7 +12,7 @@ const navigationItems = () => (
     <NavigationItem path="/previewclubs">Vereine</NavigationItem>
     <NavigationItem path="/geschichte">Geschichte</NavigationItem>
     <NavigationItem path="http://www.pfarrei-milland.it/Aktuelles%20PDF/PDFdruck.pdf" extern>Pfarrblatt</NavigationItem>
-    <NavigationItem path={mize}>MiZe</NavigationItem>
+    <NavigationItem path={mize} extern>MiZe</NavigationItem>
   </ul>
 );
 
