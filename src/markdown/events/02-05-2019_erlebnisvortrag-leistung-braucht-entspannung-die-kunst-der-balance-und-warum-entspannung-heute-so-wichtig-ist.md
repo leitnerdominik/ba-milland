@@ -9,16 +9,4 @@ title: >-
   ErlebnisVortrag „Leistung braucht Entspannung“ – Die Kunst der Balance und
   warum Entspannung heute so wichtig ist
 ---
-Wir Menschen mit unserem Leib-Seele Gefüge stehen unter bestimmten natürlichen
-
-Gesetzmäßigkeiten wie dem Gesetz der Polarität & Balance. Ein ausgewogenes
-
-Verhältnis zwischen Leistung und Entspannung ist für unsere Gesundheit und zur
-
-Vorbeugung moderner Zivilisationskrankheiten wie Stress, Burnout, Schlafstörungen,
-
-Verdauungsstörungen, Herzinfarkt etc. enorm wichtig!
-
-Im Erlebnisvortrag werden Entspannungsstrategien und praktische Entspannungsübungen
-
-gezeigt.
+Wir Menschen mit unserem Leib-Seele Gefüge stehen unter bestimmten natürlichen. Gesetzmäßigkeiten wie dem Gesetz der Polarität & Balance. Ein ausgewogenes Verhältnis zwischen Leistung und Entspannung ist für unsere Gesundheit und zur Vorbeugung moderner Zivilisationskrankheiten wie Stress, Burnout, Schlafstörungen, Verdauungsstörungen, Herzinfarkt etc. enorm wichtig! Im Erlebnisvortrag werden Entspannungsstrategien und praktische Entspannungsübungen gezeigt.
