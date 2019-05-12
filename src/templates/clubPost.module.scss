@@ -3,6 +3,8 @@
 .ClubPostContainer {
   width: 80%;
   margin: 90px auto 20px auto;
+  display: flex;
+  flex-direction: column;
 
   a {
     text-decoration: none;
