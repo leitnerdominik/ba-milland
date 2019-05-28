@@ -5,7 +5,7 @@ avatarImg: ../../images/clubs/chairman_skfv.jpg
 title: "Freundeskreis SKFV Milland"
 name: "Josef Palfrader"
 email: "josef.palfrader@outlook.de"
-tel: "328 9719735"
+tel: "335 6208619"
 ---
 
 Der „Südtiroler Kriegsopferverband“ (SKV) ist 1955 auf Landesebene gegründet worden; erst später kam die Ergänzung „Frontkämpfer“ dazu und die Bezeichnung
