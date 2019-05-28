@@ -6,9 +6,12 @@ time_until: '21:00'
 place: Jakob Steiner Haus
 section: event
 club: Bildungsausschuss
-title: Fotografie von A-Z · Grundlagen und Bildgestaltung
+title: Fotografie von A-Z · Grundlagen und Bildgestaltung - ABGESAGT
 ---
-Der Kurs richtet sich an Fotografie-Interessierte, die viele Fragen haben und auf der Suche nach Antworten sind. Neben der Vermittlung theoretischer Grundlagen wird anhand von Bildbeispielen erklärt, worauf man beim Fotografieren achten muss. Diese Tipps und Tricks werden im Kurs praktisch umgesetzt und ausprobiert.
+Der Kurs richtet sich an Fotografie-Interessierte, die viele Fragen haben und auf der Suche
+ nach Antworten sind. Neben der Vermittlung theoretischer Grundlagen wird anhand von
+ Bildbeispielen erklärt, worauf man beim Fotografieren achten muss. Diese Tipps und Tricks
+ werden im Kurs praktisch umgesetzt und ausprobiert.
 
 
 
