@@ -15,4 +15,4 @@ Im Jahre 1963 wurde in Milland die Ortsgruppe gegründet, die bis zur Auflösung
 Ziel des Vereines ist die Pflege der Heimatliebe, die Durchführung von Freizeit-aktivitäten kultureller und gemeinschaftsfördernder Art (Ausflüge und Fahrten, Törggelen, Weihnachtsfeier …. ), aber auch das Andenken an die Gefallenen der beiden Weltkriege und die damit verbundene tragische Zeit, durch gezielte Veranstaltungen wach zu halten und der heutigen Generation zu vermitteln.
 
 Obmann des Vereines ist seit 2016 Josef Palfrader (Brixen, Hartmannweg 34, josef.palfrader@outlook.de, Tel. 335 6208619).
-Ihm zur Seite stehen Pius Prader als Stellvertreter und Kassier, Monika Volgger als Schriftführerin und die Beiräte Franz Thaler, Christine Kerer und Alma Riederer. 
+Ihm zur Seite stehen Pius Prader als Stellvertreter und Kassier, Monika Volgger als Schriftführerin und die Beiräte Christine Kerer und Alma Riederer, Ehrenobmann Franz Thaler.
