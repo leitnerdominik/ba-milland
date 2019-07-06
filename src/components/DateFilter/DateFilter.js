@@ -1,4 +1,5 @@
 import React from "react";
+import PropTypes from 'prop-types';
 import DatePicker from "react-datepicker";
 
 import "react-datepicker/dist/react-datepicker.css";
@@ -37,5 +38,17 @@ const filter = (props) => {
     </div>
   );
 };
+
+filter.propTypes = {
+  date: PropTypes.instanceOf(Date),
+  startDate: PropTypes.instanceOf(Date),
+  endDate: PropTypes.instanceOf(Date),
+  changed: PropTypes.func.isRequired,
+  selectsStart: PropTypes.bool,
+  selectsEnd: PropTypes.bool,
+  onSelect: PropTypes.func.isRequired,
+  onChange: PropTypes.func.isRequired,
+  placeholderText: PropTypes.string.isRequired,
+}
 
 export default filter;
