@@ -1,5 +1,5 @@
 ---
-date_from: 24.07.2019
+date_from: 01.08.2019
 date_until: ''
 section: event
 club: Seniorenklub
