@@ -1,10 +1,10 @@
 const CLUBS = {
-  bildungsausschuss: '#66F200',
+  bildungsausschuss: '#2FA521',
   chronik: '#00a8ff',
   frauenbewegung: '#0097e6',
   frauenchor: '#8c7ae6',
   'freiwillige feuerwehr': '#c23616',
-  'freundeskreis skfv milland': '#00cec9',
+  'freundeskreis': '#5F3B3B',
   kigo: '#fbc531',
   krippenfreunde: '#e1b12c ',
   kvw: '#4cd137',
