@@ -16,7 +16,7 @@ const clubPreview = ({ htmlContent, img, title, link }) => (
       <div dangerouslySetInnerHTML={{ __html: htmlContent }} />
     </div>
     <div className={classes.Footer}>
-      <HyperLink external link={link}>MEHR ERFHAREN</HyperLink>
+      <HyperLink external link={link}>MEHR ERFAHREN</HyperLink>
     </div>
   </div>
 );
