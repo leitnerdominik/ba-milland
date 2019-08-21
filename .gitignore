@@ -65,3 +65,5 @@ typings/
 
 public/static/
 public
+
+.vscode
