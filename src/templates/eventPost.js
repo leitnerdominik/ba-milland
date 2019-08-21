@@ -57,6 +57,7 @@ export default ({ data }) => {
         {place}
         {date}
         {time}
+        <hr />
         <div dangerouslySetInnerHTML={{ __html: post.html }} />
       </div>
     </Layout>
