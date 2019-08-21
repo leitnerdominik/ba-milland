@@ -24,7 +24,7 @@ collections:
         }
       - {
           name: date_until,
-          label: Datum bis (Optional),
+          label: Datum bis ,
           widget: date,
           format: 'DD.MM.YYYY',
           required: false,
@@ -32,19 +32,19 @@ collections:
         }
       - {
           name: time_from,
-          label: Zeit von (Optional),
+          label: Zeit von,
           widget: string,
           required: false,
         }
       - {
           name: time_until,
-          label: Zeit bis (Optional),
+          label: Zeit bis,
           widget: string,
           required: false,
         } 
       - {
           name: place,
-          label: Veranstaltungsort (Optional),
+          label: Veranstaltungsort,
           widget: string,
           required: false,
         }
