@@ -22,8 +22,6 @@ Ausrollen des Fondants und Erstellung von
 
 verschiedenen Dekor-Elementen. 
 
-
-
 **Mitzubringen**: Schürze und Tortenglocke
 
 für das Mitnehmen der selber hergestellten
@@ -32,7 +30,7 @@ Motivtorte
 
 **Spesenbeitrag**: 30 €
 
-**Anmeldung:**unter 359 0729685
+**Anmeldung:** unter 349 0729685
 
 Anmeldeschluss:
 
