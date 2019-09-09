@@ -2,6 +2,7 @@
 section: club
 title: "Theater BRILLAND Brixen-Milland"
 bannerImg: ../../images/clubs/cover_brilland.jpg
+avatarImg: ../../images/clubs/chairman_nopic.jpg
 name: "Christoph Kerschbaumer"
 email: "Christoph Kerschbaumer"
 tel: "347 100 7114"
