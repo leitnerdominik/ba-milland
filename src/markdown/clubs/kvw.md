@@ -1,11 +1,11 @@
 ---
 section: club
 bannerImg: ../../images/clubs/cover_kvw.jpg
-avatarImg: ../../images/clubs/chairman_kvw.jpg
+avatarImg: ../../images/clubs/chairman_nopic.jpg
 title: "KVW Milland"
-name: "Simon Nagler"
-email: "simonnagler@yahoo.it"
-tel: "340 7777575"
+name: "Rauter Siegfried"
+email: "rauter.siegfried51@gmail.com"
+tel: "349 591 2197"
 ---
 
 Der Landesverband wurde im Jahre 1948 (in Brixen) gegründet. Heute zählt der Verband rund 40.000 Mitglieder verteilt auf 261 Ortsgruppen im Lande mit 3.000 ehrenamtlichen und über 100 hauptamtlichen Mitarbeitern.

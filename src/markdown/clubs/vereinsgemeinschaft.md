@@ -15,4 +15,3 @@ Die Haupttätigkeit der Vereinsgemeinschaft Milland (kurz VGM), ist die Koordini
 Der VGM obliegt die Verwaltung der Einrichtungen und Geräte, eventuelle Reparaturen müssen veranlasst oder selbst getätigt werden.
 Nach Veranstaltungen muss das gesamte Areal, vor allem aber der große Sitzungssaal sowie die sanitären Anlagen aufgeräumt und gereinigt werden.
 Eine schwierige Aufgabe ist die jährliche Aufteilung der Betriebskosten des Jakob-Steiner Hauses. Es gilt dabei einen gerechten Schlüssel zu finden, damit kein Verein benachteiligt, bzw. bevorzugt wird.
-Die Vereinsgemeinschaft organisiert alle zwei Jahre das Millander Dorffest an dem jeder Millander Verein teilnehmen kann.
