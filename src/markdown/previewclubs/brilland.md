@@ -1,5 +1,5 @@
 ---
-title: "Theather Brilland"
+title: "Theater Brilland"
 section: previewclub
 cover_image: "../../images/previewclubs/cover_brilland.jpg"
 link: "markdown/clubs/brilland"
