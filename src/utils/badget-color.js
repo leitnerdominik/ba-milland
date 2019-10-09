@@ -4,7 +4,7 @@ const CLUBS = {
   frauenbewegung: '#0097e6',
   frauenchor: '#8c7ae6',
   'freiwillige feuerwehr': '#c23616',
-  'freundeskreis': '#5F3B3B',
+  'freundeskreis skfv milland': '#5F3B3B',
   kigo: '#fbc531',
   krippenfreunde: '#e1b12c ',
   kvw: '#4cd137',
@@ -17,6 +17,9 @@ const CLUBS = {
 };
 
 const mapClubToColor = club => {
+  if(CLUBS[club] == undefined) {
+    return '#e84118'
+  }
   return CLUBS[club];
 };
 
