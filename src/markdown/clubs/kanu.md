@@ -8,7 +8,7 @@ email: "kanu.milland@gmail.com"
 tel: "328 3510846"
 ---
 
-Kanufahren ist eine wunderbare, naturnahe und spannende Sportart, bei der auch ein Hauch Abendteuer dabei ist.  
+Kanufahren ist eine wunderbare, naturnahe und spannende Sportart, bei der auch ein Hauch Abenteuer dabei ist.  
 
 Unsere Tätigkeit besteht zum Ersten aus der Renntätigkeit, d.h. wir bestreiten nationale und internationale Slalomrennen (olympische Disziplin),
 und dem dazugehörigen Training das großteils in Brixen und / oder in Freienfeld stattfindet.
