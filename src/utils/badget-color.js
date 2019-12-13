@@ -10,6 +10,7 @@ const CLUBS = {
   kvw: '#4cd137',
   mize: '#44bd32',
   musikkapelle: '#487eb0',
+  'parkinson-selbsthilfegruppe': '#042A67',
   seniorenklub: '#40739e',
   svp: '#e84118',
   vereinsgemeinschaft: '#273c75',
