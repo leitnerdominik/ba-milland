@@ -3,6 +3,7 @@ date_from: 19.09.2020
 date_until: ""
 time_from: 9:00
 time_until: 12:00
+place: Jakob-Steiner-Haus, Milland
 section: event
 club: Bildungsausschuss
 title: IMMUNOFRÜHSTÜCK
