@@ -1,8 +1,8 @@
 ---
 date_from: 02.10.2020
 date_until: ""
-time_from: 15:00
-time_until: 18:00
+time_from: '15:00'
+time_until: '18:00'
 place: Jakob-Steiner-Haus, Milland
 section: event
 club: Bildungsausschuss
