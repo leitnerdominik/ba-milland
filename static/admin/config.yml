@@ -39,13 +39,13 @@ collections:
       - {
           name: time_until,
           label: Zeit bis,
-          widget: string,
+          widget: "string",
           required: false,
         } 
       - {
           name: place,
           label: Veranstaltungsort,
-          widget: string,
+          widget: "string",
           required: false,
         }
       - {
