@@ -6,7 +6,9 @@ import HyperLink from "../HyperLink/HyperLink";
 
 import classes from "./ClubPreview.module.css";
 
-const clubPreview = ({ htmlContent, img, title, link }) => (
+const clubPreview = ({ htmlContent, img, title, link }) => {
+
+  return (
   <div className={classes.ClubPreviewContainer}>
     <div>
       <Img fluid={img} />
@@ -16,10 +18,11 @@ const clubPreview = ({ htmlContent, img, title, link }) => (
       <div dangerouslySetInnerHTML={{ __html: htmlContent }} />
     </div>
     <div className={classes.Footer}>
-      <HyperLink external link={link}>MEHR ERFAHREN</HyperLink>
+      <HyperLink link={`./${link}`}>MEHR ERFAHREN</HyperLink>
     </div>
   </div>
-);
+  );
+};
 
 clubPreview.propTypes = {
   img: PropTypes.any.isRequired,
