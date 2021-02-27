@@ -2,7 +2,7 @@
 section: club
 bannerImg: ../../images/clubs/cover_chronik.jpg
 avatarImg: ../../images/clubs/chairman_chronik.jpg
-title: "Musikkapelle Milland"
+title: "Chronik Milland"
 name: "Emil Kerschbaumer"
 email: "emil.kerschbaumer@gmail.com"
 tel: "333 9465242"
