@@ -1,0 +1,17 @@
+.chronik {
+  width: 80%;
+  margin: 0 auto;
+  text-align: center;
+  padding: 32px;
+}
+
+@media (max-width: 1000px) {
+  .chronik {
+    width: 95%;
+  }
+}
+
+.chronik h1 {
+  font-size: 2.5rem;
+}
+/*# sourceMappingURL=chronik.module.css.map */

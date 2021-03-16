@@ -14,7 +14,8 @@ const navigationItems = () => (
     <NavigationItem path="/geschichte">Geschichte</NavigationItem>
     <NavigationItem path="http://www.pfarrei-milland.it/Aktuelles%20PDF/PDFdruck.pdf" extern>Pfarrblatt</NavigationItem>
     <NavigationItem path={mize} extern>MiZe</NavigationItem>
-    <NavigationItem path={chronik2020} extern>Chronik</NavigationItem>
+    {/* <NavigationItem path={chronik2020} extern>Chronik</NavigationItem> */}
+    <NavigationItem path="/chronik">Chronik</NavigationItem>
   </ul>
 );
 

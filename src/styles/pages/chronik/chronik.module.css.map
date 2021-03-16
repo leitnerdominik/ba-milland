@@ -1,0 +1,10 @@
+{
+    "version": 3,
+    "mappings": "AAEA,AAAA,QAAQ,CAAC;ECKP,KAAK,EAAE,GAAG;EACV,MAAM,EAAE,MAAM;EDJd,UAAU,EAAE,MAAM;EAClB,OAAO,EAAE,IAAI;CAKd;;ACAC,MAAM,EAAE,SAAS,EAAE,MAAM;EDR3B,AAAA,QAAQ,CAAC;ICSL,KAAK,EAAE,GAAG;GDDb;;;AARD,AAKE,QALM,CAKN,EAAE,CAAC;EACD,SAAS,EAAE,MAAM;CAClB",
+    "sources": [
+        "chronik.module.scss",
+        "../../_util.scss"
+    ],
+    "names": [],
+    "file": "chronik.module.css"
+}
