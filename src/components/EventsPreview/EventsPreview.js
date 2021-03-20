@@ -73,7 +73,7 @@ const events = () => (
         events.length > 0 ? (
           events
         ) : (
-          <p className={classes.InfoText}>Keine Einträge gefunden!</p>
+          <div className={classes.InfoText}><span>Keine Einträge gefunden!</span></div>
         );
       return (
         <>
