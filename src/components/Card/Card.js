@@ -10,7 +10,7 @@ const Card = (props) => {
         <h2>{props.title}</h2>
       </div>
       <div className={classes.footer}>
-        <a href={props.file} className={classes.Link}>ÖFFNEN</a>
+        {props.children}
       </div>
     </div>
   );
