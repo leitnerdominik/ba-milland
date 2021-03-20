@@ -12,9 +12,9 @@ import classes from "../styles/pages/chronik/chronik.module.css";
 const Chronik = () => {
   return (
     <Layout>
-      <div className={classes.chronik}>
+      <div className={classes.Chronik}>
         <h1>Chronik</h1>
-        <div className={classes.flex}>
+        <div className={classes.Flex}>
           <Card title="Chronik 2019">
           <div className={classes.LinkContainer}>
             <a href={chronik2019_01}>

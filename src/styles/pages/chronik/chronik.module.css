@@ -1,4 +1,4 @@
-.chronik {
+.Chronik {
   width: 80%;
   margin: 0 auto;
   text-align: center;
@@ -6,13 +6,24 @@
 }
 
 @media (max-width: 1000px) {
-  .chronik {
+  .Chronik {
     width: 95%;
   }
 }
 
-.chronik h1 {
+.Chronik h1 {
   font-size: 2.5rem;
+}
+
+.Flex {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
 }
 
 .LinkContainer {
@@ -31,7 +42,7 @@
 
 .LinkContainer a {
   font-weight: 700;
-  font-size: 26px;
+  font-size: calc(18px + 0.8vw);
   text-decoration: none;
   color: black;
   padding: 0 30px;
