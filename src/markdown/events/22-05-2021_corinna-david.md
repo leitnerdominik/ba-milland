@@ -2,7 +2,7 @@
 date_from: 01.06.2021
 date_until: ""
 section: event
-club: Bildungsausschuss
+club: Theater Brilland
 title: Corinna & David
 ---
 Liebe Theaterfreunde!
