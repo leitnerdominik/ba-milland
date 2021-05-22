@@ -25,4 +25,4 @@ Eintritt: 12 € Kinder bis 14 Jahre: 8 €
 
 
 
-![Corinna & David](assets/flyer.jpg "Corinna & David")
+![Corinna & David](https://milland.netlify.app/assets/flyer.jpg "Corinna & David")
