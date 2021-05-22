@@ -1,5 +1,5 @@
 ---
-date_from: 21.05.2021
+date_from: 01.06.2021
 date_until: ""
 section: event
 club: Bildungsausschuss
