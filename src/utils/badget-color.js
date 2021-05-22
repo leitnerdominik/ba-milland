@@ -15,6 +15,7 @@ const CLUBS = {
   svp: '#e84118',
   vereinsgemeinschaft: '#273c75',
   volkstanzgruppe: '#192a56',
+  'theater brilland': '#804080',
 };
 
 const mapClubToColor = club => {
