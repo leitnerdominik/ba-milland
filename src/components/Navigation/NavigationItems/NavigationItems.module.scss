@@ -1,3 +1,5 @@
+@import '../../../styles/util';
+
 .NavigationItems {
   margin: 0 0 0 auto;
   padding: 0;
@@ -6,7 +8,7 @@
   flex-flow: column;
 }
 
-@media (min-width: 1050px) {
+@media (min-width: $mobileWidth) {
   .NavigationItems {
     flex-flow: row;
   }

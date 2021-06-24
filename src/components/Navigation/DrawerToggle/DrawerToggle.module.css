@@ -118,7 +118,7 @@
   }
 }
 
-@media (min-width: 1050px) {
+@media (min-width: 1200px) {
   .DrawerToggleContainer {
     display: none;
   }

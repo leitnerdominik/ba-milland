@@ -1,3 +1,5 @@
+@import '../../styles/util';
+
 .body-content {
   margin-top: 56px;
   padding-bottom: 65px;
@@ -26,7 +28,7 @@ body {
   }
 }
 
-@media(min-width: 1050px) {
+@media(min-width: $mobileWidth) {
   .body-content {
     margin-top: 71px;
   }

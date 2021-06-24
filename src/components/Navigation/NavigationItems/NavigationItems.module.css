@@ -11,7 +11,7 @@
           flex-flow: column;
 }
 
-@media (min-width: 1050px) {
+@media (min-width: 1200px) {
   .NavigationItems {
     -webkit-box-orient: horizontal;
     -webkit-box-direction: normal;

@@ -1,3 +1,5 @@
+@import '../../../styles/util';
+
 .SideDrawer {
   position: fixed;
   width: 280px;
@@ -19,7 +21,7 @@
   transform: translateX(-100%);
 }
 
-@media(min-width: 1050px) {
+@media(min-width: $mobileWidth) {
   .SideDrawer {
     display: none;
   }

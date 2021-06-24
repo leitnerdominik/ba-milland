@@ -16,7 +16,7 @@
   background: $primary-green;
 }
 
-@media (min-width: 1050px) {
+@media (min-width: $mobileWidth) {
   .Link {
     color: black;
     padding: 20px 12px;

@@ -15,7 +15,7 @@
   background: #02b839;
 }
 
-@media (min-width: 1050px) {
+@media (min-width: 1200px) {
   .Link {
     color: black;
     padding: 20px 12px;

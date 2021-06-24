@@ -47,7 +47,7 @@
   color: black;
 }
 
-@media (max-width: 1049px) {
+@media (max-width: 1199px) {
   .DesktopOnly,
   .Title {
     display: none;

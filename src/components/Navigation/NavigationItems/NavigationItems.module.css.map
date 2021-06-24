@@ -1,8 +1,9 @@
 {
     "version": 3,
-    "mappings": "AAAA,AAAA,gBAAgB,CAAC;EACf,MAAM,EAAE,UAAU;EAClB,OAAO,EAAE,CAAC;EACV,eAAe,EAAE,IAAI;EACrB,OAAO,EAAE,IAAI;EACb,SAAS,EAAE,MAAM;CAClB;;AAED,MAAM,EAAE,SAAS,EAAE,MAAM;EACvB,AAAA,gBAAgB,CAAC;IACf,SAAS,EAAE,GAAG;GACf",
+    "mappings": "AAEA,AAAA,gBAAgB,CAAC;EACf,MAAM,EAAE,UAAU;EAClB,OAAO,EAAE,CAAC;EACV,eAAe,EAAE,IAAI;EACrB,OAAO,EAAE,IAAI;EACb,SAAS,EAAE,MAAM;CAClB;;AAED,MAAM,EAAE,SAAS,EAAE,MAAM;EACvB,AAAA,gBAAgB,CAAC;IACf,SAAS,EAAE,GAAG;GACf",
     "sources": [
-        "NavigationItems.module.scss"
+        "NavigationItems.module.scss",
+        "../../../styles/_util.scss"
     ],
     "names": [],
     "file": "NavigationItems.module.css"

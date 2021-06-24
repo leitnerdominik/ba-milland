@@ -1,0 +1,20 @@
+@import '../../_util.scss';
+
+.Container {
+  @include center-content;
+  padding-top: 30px;
+
+  h2 {
+    color: $primary-green;
+  }
+
+  h3 {
+    color: $secondary-green;
+    margin: 0;
+    margin-top: 1.5rem;
+  }
+
+  p {
+    margin-bottom: 0.2rem;
+  }
+}
