@@ -2,10 +2,9 @@
 section: club
 title: "Theater BRILLAND Brixen-Milland"
 bannerImg: ../../images/clubs/cover_brilland.jpg
-avatarImg: ../../images/clubs/chairman_brilland.jpg
-name: "Christoph Kerschbaumer"
+avatarImg: ../../images/clubs/chairman_nopic.jpg
+name: "Patrick Lazzeri"
 email: "Theater.Brilland@outlook.com"
-tel: "347 100 7114"
 ---
 
 Die Theatergruppe ist schon vor einigen Jahren in Milland gegründet worden und hat sich den sozialen Eigenschatten verpflichtet und will diese auch weiterhin pflegen und sorgt mit 1-2 aufgeführten Stücken pro Jahr ebenso für heitere und gesellige Momente bei den Besuchern.
